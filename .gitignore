@@ -1,0 +1,6 @@
+/.quarto/
+/_book/
+.Rhistory
+.RData
+.Rproj.user/
+*.tex

@@ -1,0 +1,25 @@
+---
+title: "Presentación"
+---
+
+Este libro propone aprender Álgebra Superior mediante tres formas complementarias de trabajo:
+
+1. resolución manual para comprender el procedimiento;
+2. experimentación reproducible en R;
+3. visualización dinámica en GeoGebra.
+
+Los laboratorios integrados y el cuaderno de Google Colab permiten modificar datos, formular conjeturas y comprobar resultados. El código se explica paso a paso y no sustituye al razonamiento matemático: lo hace visible, verificable y extensible.
+
+La primera versión incluye interactivos autónomos para operaciones con conjuntos, tablas de verdad y clasificación de funciones. Funcionan directamente en el libro web publicado mediante GitHub Pages.
+
+## Ruta de aprendizaje {.unnumbered}
+
+Cada sección sigue, cuando corresponde, esta secuencia:
+
+- situación inicial;
+- ideas matemáticas indispensables;
+- solución manual;
+- implementación en R sin paquetes;
+- visualización o construcción en GeoGebra;
+- laboratorio interactivo;
+- interpretación y ejercicios.

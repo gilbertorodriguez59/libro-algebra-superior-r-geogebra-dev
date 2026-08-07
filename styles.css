@@ -1,0 +1,77 @@
+:root {
+  --azul-uaslp: #123b6d;
+  --azul-claro: #eaf2fb;
+  --verde-r: #2c7a5a;
+  --dorado: #b58a2a;
+}
+
+body {
+  color: #18344f;
+  line-height: 1.58;
+}
+
+a { color: #1769a6; }
+img { max-width: 100%; height: auto; }
+code { color: #155f43; }
+
+h1, h2, h3 { color: var(--azul-uaslp); }
+
+.quarto-title-banner {
+  background: linear-gradient(120deg, #123b6d, #2873a8);
+}
+
+.callout,
+.callout-note,
+.callout-tip,
+.callout-warning,
+.callout-important {
+  border-radius: 0.45rem;
+  border-left: 4px solid var(--dorado);
+  background: #f4f8fb;
+  margin: 1rem 0;
+  padding: 0.75rem 1rem;
+}
+
+pre.sourceCode {
+  border-left: 4px solid var(--verde-r);
+  background: #f6faf8;
+}
+
+table { font-size: 0.96rem; }
+
+.btn {
+  display: inline-block;
+  padding: 0.55rem 0.85rem;
+  margin: 0.2rem 0.3rem 0.2rem 0;
+  border: 1px solid #2b6f9f;
+  border-radius: 0.42rem;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.btn-primary {
+  color: #fff;
+  background: #1f6698;
+}
+
+.interactive-frame {
+  width: 100%;
+  min-height: 610px;
+  border: 1px solid #b8cadb;
+  border-radius: 0.6rem;
+  background: #f7fbff;
+  margin: 0.75rem 0 1.25rem;
+}
+
+.interactive-frame.functions { min-height: 580px; }
+.interactive-frame.truth { min-height: 560px; }
+
+.quarto-figure img {
+  border-radius: 0.4rem;
+}
+
+@media (max-width: 720px) {
+  .interactive-frame { min-height: 850px; }
+  .interactive-frame.functions { min-height: 840px; }
+  .interactive-frame.truth { min-height: 820px; }
+}

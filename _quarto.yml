@@ -1,0 +1,46 @@
+project:
+  type: book
+  output-dir: docs
+  resources:
+    - figures/**
+    - interactivos/**
+    - notebooks/**
+
+book:
+  title: "Álgebra Superior con aplicaciones en R y GeoGebra"
+  subtitle: "Teoría, visualización y experimentación"
+  author: "MI Jesús Gilberto Rodríguez Escobedo"
+  date: "2026-08-07"
+  chapters:
+    - index.qmd
+    - 01-logica-conjuntos.qmd
+  page-footer:
+    center: "Licencia CC BY-NC-SA 4.0"
+  downloads: [pdf]
+  repo-url: https://github.com/gilbertorodriguez59/libro-algebra-superior-r-geogebra-dev
+
+bibliography: references.bib
+lang: es
+number-depth: 2
+toc-depth: 2
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+    code-copy: true
+    code-fold: false
+    anchor-sections: true
+  pdf:
+    documentclass: scrreprt
+    toc: true
+    colorlinks: true
+    keep-tex: false
+    fig-pos: H
+
+execute:
+  freeze: auto
+  echo: true
+  warning: false
+  message: false
