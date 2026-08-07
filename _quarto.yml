@@ -9,11 +9,14 @@ project:
 book:
   title: "Álgebra Superior con aplicaciones en R y GeoGebra"
   subtitle: "Teoría, visualización y experimentación"
-  author: "MI Jesús Gilberto Rodríguez Escobedo"
+  author: "Jesús Gilberto Rodríguez Escobedo"
   date: "2026-08-07"
   chapters:
     - index.qmd
     - 01-logica-conjuntos.qmd
+    - 02-enteros-reales.qmd
+    - indices.qmd
+    - references.qmd
   page-footer:
     center: "Licencia CC BY-NC-SA 4.0"
   downloads: [pdf]
@@ -32,12 +35,15 @@ format:
     code-copy: true
     code-fold: false
     anchor-sections: true
+    search: true
   pdf:
     documentclass: scrreprt
     toc: true
     colorlinks: true
     keep-tex: false
     fig-pos: H
+    lof: true
+    lot: true
 
 execute:
   freeze: auto

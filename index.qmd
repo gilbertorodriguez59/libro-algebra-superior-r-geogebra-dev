@@ -12,7 +12,9 @@ Los laboratorios integrados y el cuaderno de Google Colab permiten modificar dat
 
 La primera versión incluye interactivos autónomos para operaciones con conjuntos, tablas de verdad y clasificación de funciones. Funcionan directamente en el libro web publicado mediante GitHub Pages.
 
-## Ruta de aprendizaje {.unnumbered}
+El capítulo 2 añade laboratorios para inducción, algoritmo de Euclides y valor absoluto, además de un segundo cuaderno de R. Los índices temático, de símbolos, de funciones de R, de figuras y de laboratorios facilitan la consulta transversal.
+
+## Ruta de aprendizaje {.unnumbered .unlisted}
 
 Cada sección sigue, cuando corresponde, esta secuencia:
 
@@ -23,3 +25,8 @@ Cada sección sigue, cuando corresponde, esta secuencia:
 - visualización o construcción en GeoGebra;
 - laboratorio interactivo;
 - interpretación y ejercicios.
+
+## Estructura actual {.unnumbered .unlisted}
+
+- **Capítulo 1. Lógica y conjuntos:** experimentos con conjuntos finitos, tablas de verdad, relaciones, funciones y circuitos.
+- **Capítulo 2. Números enteros y reales:** algoritmos de divisibilidad y primos, aproximación numérica, exponentes y distancia.

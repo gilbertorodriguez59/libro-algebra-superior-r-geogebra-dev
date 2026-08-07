@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es-MX" xml:lang="es-MX">
 <head>
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <meta name="author" content="MI Jesús Gilberto Rodríguez Escobedo" />
+  <meta name="author" content="Jesús Gilberto Rodríguez Escobedo" />
   <title>Álgebra Superior con aplicaciones en R y GeoGebra</title>
   <style>
     code{white-space: pre-wrap;}
@@ -107,172 +107,98 @@
     }  </style>
   <link rel="stylesheet" href="styles.css" />
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script
-  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+  <script src="/usr/share/javascript/mathjax/MathJax.js"
   type="text/javascript"></script>
 </head>
 <body>
 <header id="title-block-header">
 <h1 class="title">Álgebra Superior con aplicaciones en R y GeoGebra</h1>
-<p class="author">MI Jesús Gilberto Rodríguez Escobedo</p>
+<p class="author">Jesús Gilberto Rodríguez Escobedo</p>
 </header>
 <nav id="TOC" role="doc-toc">
 <ul>
-<li><a href="#ruta-de-aprendizaje" id="toc-ruta-de-aprendizaje">Ruta de
-aprendizaje</a></li>
 <li><a href="#lógica-y-conjuntos" id="toc-lógica-y-conjuntos"><span
 class="toc-section-number">1</span> Lógica y conjuntos</a>
 <ul>
-<li><a href="#introducción" id="toc-introducción">Introducción</a>
-<ul>
-<li><a href="#objetivos" id="toc-objetivos">Objetivos</a></li>
-</ul></li>
-<li><a href="#lenguaje-de-conjuntos"
-id="toc-lenguaje-de-conjuntos"><span
-class="toc-section-number">1.1</span> Lenguaje de conjuntos</a>
-<ul>
-<li><a href="#situación-inicial" id="toc-situación-inicial">Situación
-inicial</a></li>
-<li><a href="#conjunto-potencia" id="toc-conjunto-potencia">Conjunto
-potencia</a></li>
-</ul></li>
-<li><a href="#proposiciones-y-conectivos-lógicos"
-id="toc-proposiciones-y-conectivos-lógicos"><span
+<li><a href="#sec-lenguaje-conjuntos"
+id="toc-sec-lenguaje-conjuntos"><span
+class="toc-section-number">1.1</span> Lenguaje de conjuntos</a></li>
+<li><a href="#sec-proposiciones" id="toc-sec-proposiciones"><span
 class="toc-section-number">1.2</span> Proposiciones y conectivos
-lógicos</a>
-<ul>
-<li><a href="#construcción-de-una-tabla-de-verdad"
-id="toc-construcción-de-una-tabla-de-verdad">Construcción de una tabla
-de verdad</a></li>
-<li><a href="#tautologías-contradicciones-y-contingencias"
-id="toc-tautologías-contradicciones-y-contingencias">Tautologías,
-contradicciones y contingencias</a></li>
-<li><a href="#interactivo-tabla-de-verdad"
-id="toc-interactivo-tabla-de-verdad">Interactivo: tabla de
-verdad</a></li>
-</ul></li>
-<li><a href="#cuantificadores-y-equivalencias-lógicas"
-id="toc-cuantificadores-y-equivalencias-lógicas"><span
+lógicos</a></li>
+<li><a href="#sec-cuantificadores" id="toc-sec-cuantificadores"><span
 class="toc-section-number">1.3</span> Cuantificadores y equivalencias
-lógicas</a>
-<ul>
-<li><a href="#proposiciones-abiertas-sobre-dominios-finitos"
-id="toc-proposiciones-abiertas-sobre-dominios-finitos">Proposiciones
-abiertas sobre dominios finitos</a></li>
-<li><a href="#negación-de-cuantificadores"
-id="toc-negación-de-cuantificadores">Negación de
-cuantificadores</a></li>
-</ul></li>
-<li><a href="#operaciones-y-propiedades-de-los-conjuntos"
-id="toc-operaciones-y-propiedades-de-los-conjuntos"><span
+lógicas</a></li>
+<li><a href="#sec-operaciones-conjuntos"
+id="toc-sec-operaciones-conjuntos"><span
 class="toc-section-number">1.4</span> Operaciones y propiedades de los
-conjuntos</a>
-<ul>
-<li><a href="#operaciones-en-r" id="toc-operaciones-en-r">Operaciones en
-R</a></li>
-<li><a href="#interactivo-operaciones-de-conjuntos"
-id="toc-interactivo-operaciones-de-conjuntos">Interactivo: operaciones
-de conjuntos</a></li>
-<li><a href="#comprobación-de-las-leyes-de-de-morgan"
-id="toc-comprobación-de-las-leyes-de-de-morgan">Comprobación de las
-leyes de De Morgan</a></li>
-</ul></li>
-<li><a href="#cardinalidad-de-conjuntos-finitos-y-problemas-de-conteo"
-id="toc-cardinalidad-de-conjuntos-finitos-y-problemas-de-conteo"><span
+conjuntos</a></li>
+<li><a href="#sec-cardinalidad-finita"
+id="toc-sec-cardinalidad-finita"><span
 class="toc-section-number">1.5</span> Cardinalidad de conjuntos finitos
-y problemas de conteo</a>
-<ul>
-<li><a href="#inclusión-exclusión-con-dos-conjuntos"
-id="toc-inclusión-exclusión-con-dos-conjuntos">Inclusión-exclusión con
-dos conjuntos</a></li>
-<li><a href="#inclusión-exclusión-con-tres-conjuntos"
-id="toc-inclusión-exclusión-con-tres-conjuntos">Inclusión-exclusión con
-tres conjuntos</a></li>
-<li><a href="#interpretación"
-id="toc-interpretación">Interpretación</a></li>
-</ul></li>
-<li><a href="#producto-cartesiano-y-relaciones"
-id="toc-producto-cartesiano-y-relaciones"><span
+y problemas de conteo</a></li>
+<li><a href="#sec-producto-relaciones"
+id="toc-sec-producto-relaciones"><span
 class="toc-section-number">1.6</span> Producto cartesiano y
-relaciones</a>
-<ul>
-<li><a href="#producto-cartesiano-como-tabla"
-id="toc-producto-cartesiano-como-tabla">Producto cartesiano como
-tabla</a></li>
-<li><a href="#comprobación-de-una-identidad"
-id="toc-comprobación-de-una-identidad">Comprobación de una
-identidad</a></li>
-<li><a href="#propiedades-de-una-relación-finita"
-id="toc-propiedades-de-una-relación-finita">Propiedades de una relación
-finita</a></li>
-</ul></li>
-<li><a href="#funciones-definición-representación-y-operaciones"
-id="toc-funciones-definición-representación-y-operaciones"><span
+relaciones</a></li>
+<li><a href="#sec-funciones" id="toc-sec-funciones"><span
 class="toc-section-number">1.7</span> Funciones: definición,
-representación y operaciones</a>
-<ul>
-<li><a href="#una-función-como-tabla"
-id="toc-una-función-como-tabla">Una función como tabla</a></li>
-<li><a href="#funciones-dadas-por-fórmulas"
-id="toc-funciones-dadas-por-fórmulas">Funciones dadas por
-fórmulas</a></li>
-</ul></li>
-<li><a href="#funciones-inyectivas-suprayectivas-y-biyectivas"
-id="toc-funciones-inyectivas-suprayectivas-y-biyectivas"><span
+representación y operaciones</a></li>
+<li><a href="#sec-tipos-funciones" id="toc-sec-tipos-funciones"><span
 class="toc-section-number">1.8</span> Funciones inyectivas,
-suprayectivas y biyectivas</a>
-<ul>
-<li><a href="#clasificación-automática-de-funciones-finitas"
-id="toc-clasificación-automática-de-funciones-finitas">Clasificación
-automática de funciones finitas</a></li>
-<li><a href="#interactivo-clasificador-de-funciones"
-id="toc-interactivo-clasificador-de-funciones">Interactivo: clasificador
-de funciones</a></li>
-</ul></li>
-<li><a href="#cardinalidad-equipotencia-y-conjuntos-infinitos"
-id="toc-cardinalidad-equipotencia-y-conjuntos-infinitos"><span
+suprayectivas y biyectivas</a></li>
+<li><a href="#sec-cardinalidad-infinita"
+id="toc-sec-cardinalidad-infinita"><span
 class="toc-section-number">1.9</span> Cardinalidad, equipotencia y
-conjuntos infinitos</a>
+conjuntos infinitos</a></li>
+</ul></li>
+<li><a href="#números-enteros-y-reales"
+id="toc-números-enteros-y-reales"><span
+class="toc-section-number">2</span> Números enteros y reales</a>
 <ul>
-<li><a href="#una-biyección-entre-mathbb-n_0-y-mathbb-z"
-id="toc-una-biyección-entre-mathbb-n_0-y-mathbb-z">Una biyección entre
-<span class="math inline">\(\mathbb N_0\)</span> y <span
-class="math inline">\(\mathbb Z\)</span></a></li>
+<li><a href="#sec-propiedades-enteros"
+id="toc-sec-propiedades-enteros"><span
+class="toc-section-number">2.1</span> Propiedades de los números
+enteros</a></li>
+<li><a href="#sec-induccion" id="toc-sec-induccion"><span
+class="toc-section-number">2.2</span> Inducción matemática</a></li>
+<li><a href="#sec-divisibilidad" id="toc-sec-divisibilidad"><span
+class="toc-section-number">2.3</span> Divisibilidad</a></li>
+<li><a href="#sec-primos-factorizacion"
+id="toc-sec-primos-factorizacion"><span
+class="toc-section-number">2.4</span> Números primos y
+factorización</a></li>
+<li><a href="#sec-racionales-reales"
+id="toc-sec-racionales-reales"><span
+class="toc-section-number">2.5</span> Números racionales y números
+reales</a></li>
+<li><a href="#sec-propiedades-reales"
+id="toc-sec-propiedades-reales"><span
+class="toc-section-number">2.6</span> Propiedades de los números
+reales</a></li>
+<li><a href="#sec-exponentes" id="toc-sec-exponentes"><span
+class="toc-section-number">2.7</span> Exponentes racionales y
+negativos</a></li>
+<li><a href="#sec-valor-absoluto" id="toc-sec-valor-absoluto"><span
+class="toc-section-number">2.8</span> Valor absoluto</a></li>
 </ul></li>
-<li><a href="#aplicación-integradora-álgebra-de-boole-y-circuitos"
-id="toc-aplicación-integradora-álgebra-de-boole-y-circuitos">Aplicación
-integradora: álgebra de Boole y circuitos</a>
+<li><a href="#índices-de-consulta" id="toc-índices-de-consulta">Índices
+de consulta</a>
 <ul>
-<li><a href="#compuertas-básicas-en-r"
-id="toc-compuertas-básicas-en-r">Compuertas básicas en R</a></li>
-<li><a href="#de-circuito-a-expresión-y-de-expresión-a-circuito"
-id="toc-de-circuito-a-expresión-y-de-expresión-a-circuito">De circuito a
-expresión y de expresión a circuito</a></li>
-<li><a href="#comprobación-de-una-simplificación"
-id="toc-comprobación-de-una-simplificación">Comprobación de una
-simplificación</a></li>
-<li><a href="#universalidad-de-nor-y-nand"
-id="toc-universalidad-de-nor-y-nand">Universalidad de NOR y
-NAND</a></li>
-<li><a href="#señales-activas-en-alto-y-en-bajo"
-id="toc-señales-activas-en-alto-y-en-bajo">Señales activas en alto y en
-bajo</a></li>
-<li><a href="#formas-de-onda-lógicas"
-id="toc-formas-de-onda-lógicas">Formas de onda lógicas</a></li>
+<li><a href="#índice-temático" id="toc-índice-temático">Índice
+temático</a></li>
+<li><a href="#índice-de-funciones-y-operadores-de-r"
+id="toc-índice-de-funciones-y-operadores-de-r">Índice de funciones y
+operadores de R</a></li>
+<li><a href="#índice-de-símbolos" id="toc-índice-de-símbolos">Índice de
+símbolos</a></li>
+<li><a href="#índice-de-figuras" id="toc-índice-de-figuras">Índice de
+figuras</a></li>
+<li><a href="#índice-de-laboratorios"
+id="toc-índice-de-laboratorios">Índice de laboratorios</a></li>
 </ul></li>
-<li><a href="#laboratorio-del-capítulo"
-id="toc-laboratorio-del-capítulo">Laboratorio del capítulo</a></li>
-<li><a href="#ejercicios-con-r" id="toc-ejercicios-con-r">Ejercicios con
-R</a></li>
-<li><a href="#proyecto-integrador" id="toc-proyecto-integrador">Proyecto
-integrador</a></li>
-<li><a href="#recursos-interactivos-y-multimedia"
-id="toc-recursos-interactivos-y-multimedia">Recursos interactivos y
-multimedia</a></li>
-<li><a href="#síntesis" id="toc-síntesis">Síntesis</a></li>
-<li><a href="#referencias-del-capítulo"
-id="toc-referencias-del-capítulo">Referencias del capítulo</a></li>
-</ul></li>
+<li><a href="#referencias-generales"
+id="toc-referencias-generales">Referencias generales</a></li>
 </ul>
 </nav>
 <p>Este libro propone aprender Álgebra Superior mediante tres formas
@@ -289,7 +215,12 @@ hace visible, verificable y extensible.</p>
 <p>La primera versión incluye interactivos autónomos para operaciones
 con conjuntos, tablas de verdad y clasificación de funciones. Funcionan
 directamente en el libro web publicado mediante GitHub Pages.</p>
-<h2 class="unnumbered" id="ruta-de-aprendizaje">Ruta de aprendizaje</h2>
+<p>El capítulo 2 añade laboratorios para inducción, algoritmo de
+Euclides y valor absoluto, además de un segundo cuaderno de R. Los
+índices temático, de símbolos, de funciones de R, de figuras y de
+laboratorios facilitan la consulta transversal.</p>
+<h2 class="unnumbered unlisted" id="ruta-de-aprendizaje">Ruta de
+aprendizaje</h2>
 <p>Cada sección sigue, cuando corresponde, esta secuencia:</p>
 <ul>
 <li>situación inicial;</li>
@@ -300,10 +231,20 @@ directamente en el libro web publicado mediante GitHub Pages.</p>
 <li>laboratorio interactivo;</li>
 <li>interpretación y ejercicios.</li>
 </ul>
+<h2 class="unnumbered unlisted" id="estructura-actual">Estructura
+actual</h2>
+<ul>
+<li><strong>Capítulo 1. Lógica y conjuntos:</strong> experimentos con
+conjuntos finitos, tablas de verdad, relaciones, funciones y
+circuitos.</li>
+<li><strong>Capítulo 2. Números enteros y reales:</strong> algoritmos de
+divisibilidad y primos, aproximación numérica, exponentes y
+distancia.</li>
+</ul>
 <h1 data-number="1" id="lógica-y-conjuntos"><span
 class="header-section-number">1</span> Lógica y conjuntos</h1>
 <p><em>Experimentación con R, GeoGebra y circuitos</em></p>
-<h2 class="unnumbered" id="introducción">Introducción</h2>
+<h2 class="unnumbered unlisted" id="introducción">Introducción</h2>
 <p>Este capítulo transforma los conceptos de lógica y conjuntos en
 objetos que pueden calcularse, visualizarse y comprobarse. Cada bloque
 parte de una idea matemática, la resuelve manualmente y después utiliza
@@ -315,6 +256,7 @@ data-cites="rCore2026">(R Core Team 2026)</span>. De esta forma puede
 ejecutarse en RStudio o en el cuaderno de Google Colab sin instalar
 paquetes.</p>
 <div class="callout-tip" title="Cuaderno completo y ejecutable">
+<p><strong>Cuaderno completo y ejecutable</strong></p>
 <p>El cuaderno reúne las nueve secciones, las aplicaciones a sistemas
 digitales, visualizaciones en R y ejercicios de comprobación. Puede
 abrirse en Colab o descargarse para conservar una copia local.</p>
@@ -324,7 +266,7 @@ class="btn btn-primary" target="_blank">Abrir en Google Colab</a> <a
 href="notebooks/capitulo-01-logica-conjuntos-R.ipynb" class="btn"
 target="_blank">Descargar el cuaderno</a></p>
 </div>
-<h3 class="unnumbered" id="objetivos">Objetivos</h3>
+<h3 class="unnumbered unlisted" id="objetivos">Objetivos</h3>
 <p>Al finalizar, el lector podrá:</p>
 <ul>
 <li>representar conjuntos finitos mediante vectores de R;</li>
@@ -337,9 +279,10 @@ target="_blank">Descargar el cuaderno</a></p>
 <li>experimentar con correspondencias biyectivas;</li>
 <li>comprobar simplificaciones booleanas y diseñar circuitos.</li>
 </ul>
-<h2 data-number="1.1" id="lenguaje-de-conjuntos"><span
+<h2 data-number="1.1" id="sec-lenguaje-conjuntos"><span
 class="header-section-number">1.1</span> Lenguaje de conjuntos</h2>
-<h3 class="unnumbered" id="situación-inicial">Situación inicial</h3>
+<h3 class="unnumbered unlisted" id="situación-inicial">Situación
+inicial</h3>
 <p>Consideremos el universo</p>
 <p><span class="math display">\[
 U=\{1,2,\ldots,10\},
@@ -376,7 +319,8 @@ basta que algún elemento pertenezca; todos deben pertenecer:</p>
 <p>La función <strong>setequal()</strong> devuelve verdadero, mientras
 que <strong>identical()</strong> devuelve falso, porque esta última
 compara vectores ordenados, no conjuntos.</p>
-<h3 class="unnumbered" id="conjunto-potencia">Conjunto potencia</h3>
+<h3 class="unnumbered unlisted" id="conjunto-potencia">Conjunto
+potencia</h3>
 <p>El siguiente código genera todos los subconjuntos de un conjunto
 finito:</p>
 <div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>conjunto_potencia <span class="ot">&lt;-</span> <span class="cf">function</span>(A) {</span>
@@ -398,16 +342,17 @@ finito:</p>
 <p>El resultado contiene <span class="math inline">\(2^3=8\)</span>
 subconjuntos, incluido el conjunto vacío.</p>
 <div class="callout-note" title="GeoGebra: actividad prevista">
+<p><strong>GeoGebra: actividad prevista</strong></p>
 <p>Se construirá una mesa dinámica con los ocho subconjuntos de <span
 class="math inline">\(\{a,b,c\}\)</span>. El estudiante podrá
 seleccionar dos subconjuntos y observar su unión, intersección y
 diferencia simétrica. El enlace se incorporará cuando la actividad esté
 publicada.</p>
 </div>
-<h2 data-number="1.2" id="proposiciones-y-conectivos-lógicos"><span
+<h2 data-number="1.2" id="sec-proposiciones"><span
 class="header-section-number">1.2</span> Proposiciones y conectivos
 lógicos</h2>
-<h3 class="unnumbered"
+<h3 class="unnumbered unlisted"
 id="construcción-de-una-tabla-de-verdad">Construcción de una tabla de
 verdad</h3>
 <p>R representa verdadero y falso mediante <strong>TRUE</strong> y
@@ -433,7 +378,7 @@ generan así:</p>
 <p><span class="math display">\[
 p\Rightarrow q\equiv\neg p\lor q.
 \]</span></p>
-<h3 class="unnumbered"
+<h3 class="unnumbered unlisted"
 id="tautologías-contradicciones-y-contingencias">Tautologías,
 contradicciones y contingencias</h3>
 <p>Una expresión es tautología si todas sus filas son verdaderas:</p>
@@ -465,8 +410,8 @@ p\Rightarrow(q\land r)
 <span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a><span class="fu">all</span>(izquierda <span class="sc">==</span> derecha)</span></code></pre></div>
 <p>La última instrucción devuelve verdadero; la equivalencia se cumple
 en todas las filas.</p>
-<h3 class="unnumbered" id="interactivo-tabla-de-verdad">Interactivo:
-tabla de verdad</h3>
+<h3 class="unnumbered unlisted"
+id="interactivo-tabla-de-verdad">Interactivo: tabla de verdad</h3>
 <p>Cambie la expresión y los valores de entrada. La fila activa se
 señala en la tabla y la salida se actualiza inmediatamente.</p>
 <p><a href="interactivos/tablas-verdad.html" class="btn btn-primary"
@@ -475,10 +420,10 @@ target="_blank">Abrir el laboratorio de tablas de verdad</a></p>
 <iframe class="interactive-frame truth" src="interactivos/tablas-verdad.html" title="Laboratorio interactivo de tablas de verdad" loading="lazy">
 </iframe>
 </div>
-<h2 data-number="1.3" id="cuantificadores-y-equivalencias-lógicas"><span
+<h2 data-number="1.3" id="sec-cuantificadores"><span
 class="header-section-number">1.3</span> Cuantificadores y equivalencias
 lógicas</h2>
-<h3 class="unnumbered"
+<h3 class="unnumbered unlisted"
 id="proposiciones-abiertas-sobre-dominios-finitos">Proposiciones
 abiertas sobre dominios finitos</h3>
 <p>Sea</p>
@@ -500,13 +445,14 @@ cuantificador universal y <strong>any()</strong> el existencial:</p>
 <span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="fu">any</span>(D<span class="sc">^</span><span class="dv">2</span> <span class="sc">==</span> <span class="dv">4</span>)  <span class="co"># existe x en D tal que x^2 = 4</span></span></code></pre></div>
 <div class="callout-warning"
 title="Límite de la comprobación computacional">
+<p><strong>Límite de la comprobación computacional</strong></p>
 <p>Verificar una propiedad en muchos valores no demuestra que se cumpla
 para todos los números reales. R sí puede decidir un cuantificador sobre
 un dominio finito completamente enumerado. Para dominios infinitos, la
 demostración matemática sigue siendo indispensable.</p>
 </div>
-<h3 class="unnumbered" id="negación-de-cuantificadores">Negación de
-cuantificadores</h3>
+<h3 class="unnumbered unlisted"
+id="negación-de-cuantificadores">Negación de cuantificadores</h3>
 <p>La equivalencia</p>
 <p><span class="math display">\[
 \neg(\forall x\in D\,p(x))
@@ -520,11 +466,11 @@ cuantificadores</h3>
 <span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a><span class="fu">c</span>(lado_izquierdo, lado_derecho)</span></code></pre></div>
 <p>No estamos sustituyendo una demostración formal; estamos observando
 la equivalencia en el dominio elegido.</p>
-<h2 data-number="1.4"
-id="operaciones-y-propiedades-de-los-conjuntos"><span
+<h2 data-number="1.4" id="sec-operaciones-conjuntos"><span
 class="header-section-number">1.4</span> Operaciones y propiedades de
 los conjuntos</h2>
-<h3 class="unnumbered" id="operaciones-en-r">Operaciones en R</h3>
+<h3 class="unnumbered unlisted" id="operaciones-en-r">Operaciones en
+R</h3>
 <p>R incluye funciones directas para unión, intersección y
 diferencia.</p>
 <div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">union</span>(A, B)</span>
@@ -553,7 +499,7 @@ alt="Cuatro operaciones representadas mediante regiones de Venn: unión, interse
 regiones de Venn: unión, intersección, complemento y diferencia
 simétrica.</figcaption>
 </figure>
-<h3 class="unnumbered"
+<h3 class="unnumbered unlisted"
 id="interactivo-operaciones-de-conjuntos">Interactivo: operaciones de
 conjuntos</h3>
 <p>Seleccione una operación y modifique los elementos de <span
@@ -567,7 +513,7 @@ conjuntos</a></p>
 <iframe class="interactive-frame" src="interactivos/operaciones-conjuntos.html" title="Laboratorio interactivo de operaciones con conjuntos" loading="lazy">
 </iframe>
 </div>
-<h3 class="unnumbered"
+<h3 class="unnumbered unlisted"
 id="comprobación-de-las-leyes-de-de-morgan">Comprobación de las leyes de
 De Morgan</h3>
 <p>Para los conjuntos concretos <span class="math inline">\(A,B\subseteq
@@ -585,17 +531,17 @@ U\)</span>, comprobamos</p>
 <span id="cb15-8"><a href="#cb15-8" aria-hidden="true" tabindex="-1"></a>lado_derecho</span>
 <span id="cb15-9"><a href="#cb15-9" aria-hidden="true" tabindex="-1"></a><span class="fu">setequal</span>(lado_izquierdo, lado_derecho)</span></code></pre></div>
 <div class="callout-note" title="Del interactivo a la demostración">
+<p><strong>Del interactivo a la demostración</strong></p>
 <p>El laboratorio permite anticipar que <span
 class="math inline">\((A\cup B)^c\)</span> y <span
 class="math inline">\(A^c\cap B^c\)</span> sombrean la misma región. La
 comprobación con R verifica el universo finito elegido; la demostración
 general se realiza mediante pertenencia.</p>
 </div>
-<h2 data-number="1.5"
-id="cardinalidad-de-conjuntos-finitos-y-problemas-de-conteo"><span
+<h2 data-number="1.5" id="sec-cardinalidad-finita"><span
 class="header-section-number">1.5</span> Cardinalidad de conjuntos
 finitos y problemas de conteo</h2>
-<h3 class="unnumbered"
+<h3 class="unnumbered unlisted"
 id="inclusión-exclusión-con-dos-conjuntos">Inclusión-exclusión con dos
 conjuntos</h3>
 <p>En un grupo de <span class="math inline">\(180\)</span> estudiantes,
@@ -611,7 +557,7 @@ class="math inline">\(40\)</span> utilizan ambos lenguajes.</p>
 <span id="cb16-7"><a href="#cb16-7" aria-hidden="true" tabindex="-1"></a>n_ninguno <span class="ot">&lt;-</span> total <span class="sc">-</span> n_al_menos_uno</span>
 <span id="cb16-8"><a href="#cb16-8" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb16-9"><a href="#cb16-9" aria-hidden="true" tabindex="-1"></a><span class="fu">c</span>(<span class="at">al_menos_uno =</span> n_al_menos_uno, <span class="at">ninguno =</span> n_ninguno)</span></code></pre></div>
-<h3 class="unnumbered"
+<h3 class="unnumbered unlisted"
 id="inclusión-exclusión-con-tres-conjuntos">Inclusión-exclusión con tres
 conjuntos</h3>
 <div class="sourceCode" id="cb17"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>inclusion_exclusion_3 <span class="ot">&lt;-</span> <span class="cf">function</span>(nA, nB, nC,</span>
@@ -628,16 +574,16 @@ conjuntos</h3>
 <span id="cb17-12"><a href="#cb17-12" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb17-13"><a href="#cb17-13" aria-hidden="true" tabindex="-1"></a>ningun_sensor <span class="ot">&lt;-</span> total_dispositivos <span class="sc">-</span> al_menos_un_sensor</span>
 <span id="cb17-14"><a href="#cb17-14" aria-hidden="true" tabindex="-1"></a><span class="fu">c</span>(al_menos_un_sensor, ningun_sensor)</span></code></pre></div>
-<h3 class="unnumbered" id="interpretación">Interpretación</h3>
+<h3 class="unnumbered unlisted" id="interpretación">Interpretación</h3>
 <p>R no decide qué significa cada intersección. El lector debe
 identificar si los datos de dos conjuntos incluyen o excluyen la
 intersección triple. El código ejecuta correctamente una fórmula solo
 cuando la modelación es correcta.</p>
-<h2 data-number="1.6" id="producto-cartesiano-y-relaciones"><span
+<h2 data-number="1.6" id="sec-producto-relaciones"><span
 class="header-section-number">1.6</span> Producto cartesiano y
 relaciones</h2>
-<h3 class="unnumbered" id="producto-cartesiano-como-tabla">Producto
-cartesiano como tabla</h3>
+<h3 class="unnumbered unlisted"
+id="producto-cartesiano-como-tabla">Producto cartesiano como tabla</h3>
 <p>Sean <span class="math inline">\(A=\{1,2\}\)</span> y <span
 class="math inline">\(B=\{x,y,z\}\)</span>. El producto <span
 class="math inline">\(A\times B\)</span> se genera con
@@ -650,8 +596,8 @@ class="math inline">\(A\times B\)</span> se genera con
 <span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a><span class="fu">nrow</span>(AxB)</span></code></pre></div>
 <p>El número de filas confirma <span class="math inline">\(|A\times
 B|=|A||B|=6\)</span>.</p>
-<h3 class="unnumbered" id="comprobación-de-una-identidad">Comprobación
-de una identidad</h3>
+<h3 class="unnumbered unlisted"
+id="comprobación-de-una-identidad">Comprobación de una identidad</h3>
 <p>Verifiquemos</p>
 <p><span class="math display">\[
 A\times(B\cup C)=(A\times B)\cup(A\times C).
@@ -675,7 +621,7 @@ A\times(B\cup C)=(A\times B)\cup(A\times C).
 <span id="cb19-16"><a href="#cb19-16" aria-hidden="true" tabindex="-1"></a>)</span>
 <span id="cb19-17"><a href="#cb19-17" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb19-18"><a href="#cb19-18" aria-hidden="true" tabindex="-1"></a><span class="fu">setequal</span>(izquierda, derecha)</span></code></pre></div>
-<h3 class="unnumbered"
+<h3 class="unnumbered unlisted"
 id="propiedades-de-una-relación-finita">Propiedades de una relación
 finita</h3>
 <p>Representemos una relación mediante dos columnas:</p>
@@ -730,16 +676,16 @@ y una correspondencia que no cumple la definición de
 función.</figcaption>
 </figure>
 <div class="callout-tip" title="Interpretación">
+<p><strong>Interpretación</strong></p>
 <p>El programa comprueba una relación finita completamente especificada.
 La razón matemática de cada propiedad sigue siendo la definición; el
 código automatiza la revisión de los pares.</p>
 </div>
-<h2 data-number="1.7"
-id="funciones-definición-representación-y-operaciones"><span
+<h2 data-number="1.7" id="sec-funciones"><span
 class="header-section-number">1.7</span> Funciones: definición,
 representación y operaciones</h2>
-<h3 class="unnumbered" id="una-función-como-tabla">Una función como
-tabla</h3>
+<h3 class="unnumbered unlisted" id="una-función-como-tabla">Una función
+como tabla</h3>
 <p>Sobre conjuntos finitos, una función puede representarse por una
 tabla de entradas y salidas.</p>
 <div class="sourceCode" id="cb22"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>dominio <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;s1&quot;</span>, <span class="st">&quot;s2&quot;</span>, <span class="st">&quot;s3&quot;</span>)</span>
@@ -766,8 +712,8 @@ tabla de entradas y salidas.</p>
 <span id="cb23-7"><a href="#cb23-7" aria-hidden="true" tabindex="-1"></a>}</span>
 <span id="cb23-8"><a href="#cb23-8" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb23-9"><a href="#cb23-9" aria-hidden="true" tabindex="-1"></a><span class="fu">es_funcion</span>(f_tabla, dominio, codominio)</span></code></pre></div>
-<h3 class="unnumbered" id="funciones-dadas-por-fórmulas">Funciones dadas
-por fórmulas</h3>
+<h3 class="unnumbered unlisted"
+id="funciones-dadas-por-fórmulas">Funciones dadas por fórmulas</h3>
 <div class="sourceCode" id="cb24"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>f <span class="ot">&lt;-</span> <span class="cf">function</span>(x) <span class="dv">2</span> <span class="sc">*</span> x <span class="sc">+</span> <span class="dv">1</span></span>
 <span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>g <span class="ot">&lt;-</span> <span class="cf">function</span>(x) x<span class="sc">^</span><span class="dv">2</span></span>
 <span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -791,6 +737,7 @@ class="math inline">\(g\)</span> y directamente mediante la composición
 <span class="math inline">\(g\circ f\)</span>.</figcaption>
 </figure>
 <div class="callout-note" title="GeoGebra: composición prevista">
+<p><strong>GeoGebra: composición prevista</strong></p>
 <p>Se mostrarán simultáneamente las gráficas de <span
 class="math inline">\(f\)</span>, <span
 class="math inline">\(g\)</span>, <span class="math inline">\(g\circ
@@ -799,11 +746,10 @@ deslizador permitirá seguir un valor <span
 class="math inline">\(x\)</span> desde el dominio, pasar por la salida
 de la primera función y llegar a la composición.</p>
 </div>
-<h2 data-number="1.8"
-id="funciones-inyectivas-suprayectivas-y-biyectivas"><span
+<h2 data-number="1.8" id="sec-tipos-funciones"><span
 class="header-section-number">1.8</span> Funciones inyectivas,
 suprayectivas y biyectivas</h2>
-<h3 class="unnumbered"
+<h3 class="unnumbered unlisted"
 id="clasificación-automática-de-funciones-finitas">Clasificación
 automática de funciones finitas</h3>
 <div class="sourceCode" id="cb25"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>clasificar_funcion <span class="ot">&lt;-</span> <span class="cf">function</span>(tabla, dominio, codominio) {</span>
@@ -844,7 +790,7 @@ alt="La inyectividad evita imágenes repetidas; la suprayectividad exige cubrir 
 la suprayectividad exige cubrir todo el codominio; la biyección cumple
 ambas condiciones.</figcaption>
 </figure>
-<h3 class="unnumbered"
+<h3 class="unnumbered unlisted"
 id="interactivo-clasificador-de-funciones">Interactivo: clasificador de
 funciones</h3>
 <p>Modifique las tres imágenes, deje alguna entrada sin imagen o asigne
@@ -858,11 +804,10 @@ funciones</a></p>
 <iframe class="interactive-frame functions" src="interactivos/clasificador-funciones.html" title="Clasificador interactivo de funciones finitas" loading="lazy">
 </iframe>
 </div>
-<h2 data-number="1.9"
-id="cardinalidad-equipotencia-y-conjuntos-infinitos"><span
+<h2 data-number="1.9" id="sec-cardinalidad-infinita"><span
 class="header-section-number">1.9</span> Cardinalidad, equipotencia y
 conjuntos infinitos</h2>
-<h3 class="unnumbered"
+<h3 class="unnumbered unlisted"
 id="una-biyección-entre-mathbb-n_0-y-mathbb-z">Una biyección entre <span
 class="math inline">\(\mathbb N_0\)</span> y <span
 class="math inline">\(\mathbb Z\)</span></h3>
@@ -893,20 +838,21 @@ class="math inline">\(\mathbb Z\)</span></h3>
 naturales.</p>
 <div class="callout-warning"
 title="Qué demuestra y qué no demuestra el experimento">
+<p><strong>Qué demuestra y qué no demuestra el experimento</strong></p>
 <p>La tabla solo muestra los primeros valores. La biyección se justifica
 demostrando que cada entero aparece exactamente una vez; observar muchos
 casos sirve para comprender el patrón, no para sustituir la prueba.</p>
 </div>
-<h2 class="unnumbered"
+<h2 class="unnumbered unlisted"
 id="aplicación-integradora-álgebra-de-boole-y-circuitos">Aplicación
 integradora: álgebra de Boole y circuitos</h2>
 <p>La secuencia práctica adapta el capítulo 3 de <span class="citation"
-data-cites="tocci2003">Tocci and Widmer (2003)</span>: variables
+data-cites="tocci2003">Tocci y Widmer (2003)</span>: variables
 booleanas, tablas de verdad, compuertas OR, AND y NOT, traducción entre
 circuitos y expresiones, evaluación de salidas, NAND/NOR, De Morgan,
 universalidad y diagramas de temporización.</p>
-<h3 class="unnumbered" id="compuertas-básicas-en-r">Compuertas básicas
-en R</h3>
+<h3 class="unnumbered unlisted" id="compuertas-básicas-en-r">Compuertas
+básicas en R</h3>
 <div class="sourceCode" id="cb28"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a>NOT <span class="ot">&lt;-</span> <span class="cf">function</span>(a) <span class="sc">!</span>a</span>
 <span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a>OR  <span class="ot">&lt;-</span> <span class="cf">function</span>(a, b) a <span class="sc">|</span> b</span>
 <span id="cb28-3"><a href="#cb28-3" aria-hidden="true" tabindex="-1"></a>AND <span class="ot">&lt;-</span> <span class="cf">function</span>(a, b) a <span class="sc">&amp;</span> b</span>
@@ -925,7 +871,7 @@ en R</h3>
 <span id="cb28-16"><a href="#cb28-16" aria-hidden="true" tabindex="-1"></a>  <span class="at">NOR =</span> <span class="fu">NOR</span>(entradas_basicas<span class="sc">$</span>a, entradas_basicas<span class="sc">$</span>b),</span>
 <span id="cb28-17"><a href="#cb28-17" aria-hidden="true" tabindex="-1"></a>  <span class="at">NAND =</span> <span class="fu">NAND</span>(entradas_basicas<span class="sc">$</span>a, entradas_basicas<span class="sc">$</span>b)</span>
 <span id="cb28-18"><a href="#cb28-18" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div>
-<h3 class="unnumbered"
+<h3 class="unnumbered unlisted"
 id="de-circuito-a-expresión-y-de-expresión-a-circuito">De circuito a
 expresión y de expresión a circuito</h3>
 <p>Para analizar un diagrama:</p>
@@ -947,12 +893,13 @@ X=(A+\overline B)\,C
 <span class="math inline">\(A+\overline B\)</span> con OR y combinar el
 resultado con <span class="math inline">\(C\)</span> mediante AND.</p>
 <div class="callout-note" title="Figuras previstas">
+<p><strong>Figuras previstas</strong></p>
 <p>El libro incorporará figuras propias con símbolos lógicos estándar.
 Cada ejemplo mostrará cuatro representaciones coordinadas: expresión,
 tabla de verdad, circuito y diagrama de temporización. No se
 reutilizarán las ilustraciones del texto de referencia.</p>
 </div>
-<h3 class="unnumbered"
+<h3 class="unnumbered unlisted"
 id="comprobación-de-una-simplificación">Comprobación de una
 simplificación</h3>
 <p>Estudiemos</p>
@@ -989,8 +936,8 @@ F
 <span id="cb29-17"><a href="#cb29-17" aria-hidden="true" tabindex="-1"></a>)</span>
 <span id="cb29-18"><a href="#cb29-18" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb29-19"><a href="#cb29-19" aria-hidden="true" tabindex="-1"></a><span class="fu">all</span>(F_original <span class="sc">==</span> F_simplificada)</span></code></pre></div>
-<h3 class="unnumbered" id="universalidad-de-nor-y-nand">Universalidad de
-NOR y NAND</h3>
+<h3 class="unnumbered unlisted"
+id="universalidad-de-nor-y-nand">Universalidad de NOR y NAND</h3>
 <div class="sourceCode" id="cb30"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a>nor <span class="ot">&lt;-</span> <span class="cf">function</span>(x, y) <span class="sc">!</span>(x <span class="sc">|</span> y)</span>
 <span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb30-3"><a href="#cb30-3" aria-hidden="true" tabindex="-1"></a>no_con_nor <span class="ot">&lt;-</span> <span class="cf">function</span>(x) <span class="fu">nor</span>(x, x)</span>
@@ -1021,8 +968,9 @@ NOR y NAND</h3>
 <span id="cb31-10"><a href="#cb31-10" aria-hidden="true" tabindex="-1"></a>  <span class="at">OR_ab =</span> <span class="fu">o_con_nand</span>(entradas<span class="sc">$</span>a, entradas<span class="sc">$</span>b),</span>
 <span id="cb31-11"><a href="#cb31-11" aria-hidden="true" tabindex="-1"></a>  <span class="at">AND_ab =</span> <span class="fu">y_con_nand</span>(entradas<span class="sc">$</span>a, entradas<span class="sc">$</span>b)</span>
 <span id="cb31-12"><a href="#cb31-12" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div>
-<h3 class="unnumbered" id="señales-activas-en-alto-y-en-bajo">Señales
-activas en alto y en bajo</h3>
+<h3 class="unnumbered unlisted"
+id="señales-activas-en-alto-y-en-bajo">Señales activas en alto y en
+bajo</h3>
 <p>Una señal activa en alto realiza su función cuando vale <span
 class="math inline">\(1\)</span>; una activa en bajo la realiza cuando
 vale <span class="math inline">\(0\)</span>. En un nombre de señal, la
@@ -1038,13 +986,14 @@ una burbuja indica inversión o terminal activa en bajo.</p>
 <span id="cb32-8"><a href="#cb32-8" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div>
 <div class="callout-warning"
 title="Modelo lógico frente a circuito físico">
+<p><strong>Modelo lógico frente a circuito físico</strong></p>
 <p>En R, cero y uno se modelan como estados lógicos. En el dispositivo
 real corresponden a intervalos de voltaje definidos por su tecnología.
 El modelo de este capítulo no incluye todavía márgenes de ruido ni
 retardos de propagación.</p>
 </div>
-<h3 class="unnumbered" id="formas-de-onda-lógicas">Formas de onda
-lógicas</h3>
+<h3 class="unnumbered unlisted" id="formas-de-onda-lógicas">Formas de
+onda lógicas</h3>
 <p>El siguiente ejemplo genera señales binarias y calcula las salidas
 AND y OR.</p>
 <div class="sourceCode" id="cb33"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a>t <span class="ot">&lt;-</span> <span class="dv">0</span><span class="sc">:</span><span class="dv">8</span></span>
@@ -1075,6 +1024,7 @@ AND y OR.</p>
 <span id="cb33-26"><a href="#cb33-26" aria-hidden="true" tabindex="-1"></a>  <span class="at">bty =</span> <span class="st">&quot;n&quot;</span></span>
 <span id="cb33-27"><a href="#cb33-27" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div>
 <div class="callout-note" title="GeoGebra: circuitos y formas de onda">
+<p><strong>GeoGebra: circuitos y formas de onda</strong></p>
 <p>El recurso previsto permitirá accionar interruptores para <span
 class="math inline">\(A\)</span>, <span class="math inline">\(B\)</span>
 y <span class="math inline">\(C\)</span>, observar la salida del
@@ -1082,11 +1032,11 @@ circuito y comparar el resultado con la fila correspondiente de la tabla
 de verdad. Otro recurso permitirá mover los instantes de conmutación y
 observar las formas de onda. Las compuertas se presentarán con símbolos
 uniformes basados en la convención IEEE/ANSI estudiada por <span
-class="citation" data-cites="tocci2003">Tocci and Widmer
+class="citation" data-cites="tocci2003">Tocci y Widmer
 (2003)</span>.</p>
 </div>
-<h2 class="unnumbered" id="laboratorio-del-capítulo">Laboratorio del
-capítulo</h2>
+<h2 class="unnumbered unlisted"
+id="laboratorio-del-capítulo">Laboratorio del capítulo</h2>
 <p>La primera versión integra tres aplicaciones que funcionan
 directamente en el sitio estático, sin servidor ni instalación
 adicional:</p>
@@ -1103,7 +1053,8 @@ diagnóstico de inyectividad, suprayectividad y biyectividad.</li>
 polaridades y diagramas de temporización, será la siguiente ampliación.
 Más adelante se preparará una versión Shiny o Shinylive cuando aporte
 controles que no convenga resolver en el navegador.</p>
-<h2 class="unnumbered" id="ejercicios-con-r">Ejercicios con R</h2>
+<h2 class="unnumbered unlisted" id="ejercicios-con-r">Ejercicios con
+R</h2>
 <ol type="1">
 <li>Modifique <span class="math inline">\(U,A,B\)</span> y compruebe
 ambas leyes de De Morgan.</li>
@@ -1123,7 +1074,8 @@ compuerta universal.</li>
 <li>Genere dos señales binarias propias y trace las salidas XOR y
 NOR.</li>
 </ol>
-<h2 class="unnumbered" id="proyecto-integrador">Proyecto integrador</h2>
+<h2 class="unnumbered unlisted" id="proyecto-integrador">Proyecto
+integrador</h2>
 <p>Diseñe un sistema lógico de tres entradas relacionado con sensores
 electrónicos:</p>
 <ol type="1">
@@ -1136,8 +1088,9 @@ electrónicos:</p>
 <li>genere una forma de onda de prueba;</li>
 <li>interprete la reducción en el número de compuertas.</li>
 </ol>
-<h2 class="unnumbered" id="recursos-interactivos-y-multimedia">Recursos
-interactivos y multimedia</h2>
+<h2 class="unnumbered unlisted"
+id="recursos-interactivos-y-multimedia">Recursos interactivos y
+multimedia</h2>
 <p>Esta versión ya incorpora:</p>
 <ul>
 <li>cuaderno completo del capítulo para Google Colab con R;</li>
@@ -1158,29 +1111,1054 @@ tipos de funciones.</li>
 <li>infografía de errores frecuentes;</li>
 <li>actividades de GeoGebra y simulador de circuitos.</li>
 </ul>
-<h2 class="unnumbered" id="síntesis">Síntesis</h2>
+<h2 class="unnumbered unlisted" id="síntesis">Síntesis</h2>
 <p>R permite experimentar con conjuntos finitos, tablas de verdad,
 relaciones y funciones. Las comprobaciones exhaustivas son concluyentes
 cuando el dominio es finito y se han enumerado todos los casos. Para
 afirmaciones generales sobre conjuntos infinitos, la demostración
 matemática sigue siendo el fundamento.</p>
-<h2 class="unnumbered" id="referencias-del-capítulo">Referencias del
-capítulo</h2>
+<h2 class="unnumbered unlisted"
+id="referencias-del-capítulo">Referencias del capítulo</h2>
 <p>La secuencia temática sigue el programa de Álgebra Superior <span
 class="citation" data-cites="uaslp2011">(Universidad Autónoma de San
 Luis Potosí, Facultad de Ciencias 2011)</span>. Los fundamentos se
-apoyan en <span class="citation" data-cites="silvaLazo2007">Silva and
-Lazo (2007)</span>, <span class="citation" data-cites="epp2011">Epp
+apoyan en <span class="citation" data-cites="silvaLazo2007">Silva y Lazo
+(2007)</span>, <span class="citation" data-cites="epp2011">Epp
 (2011)</span> y <span class="citation" data-cites="rosen2019">Rosen
 (2019)</span>. La aplicación a compuertas y álgebra booleana adapta el
-capítulo 3 de <span class="citation" data-cites="tocci2003">Tocci and
+capítulo 3 de <span class="citation" data-cites="tocci2003">Tocci y
 Widmer (2003)</span>. El código utiliza R base <span class="citation"
 data-cites="rCore2026">(R Core Team 2026)</span>.</p>
+<h1 data-number="2" id="números-enteros-y-reales"><span
+class="header-section-number">2</span> Números enteros y reales</h1>
+<p><em>Experimentación con R, algoritmos y recta numérica</em></p>
+<h2 class="unnumbered unlisted" id="introducción-1">Introducción</h2>
+<p>Este capítulo convierte propiedades de los enteros y los reales en
+experimentos reproducibles. R permitirá generar ejemplos, ejecutar
+algoritmos, detectar patrones y visualizar distancias. La comprobación
+computacional será una herramienta para formular y revisar conjeturas;
+las afirmaciones para infinitos números continuarán requiriendo
+demostración.</p>
+<p>Todo el código principal usa R base <span class="citation"
+data-cites="rCore2026">(R Core Team 2026)</span>. Puede ejecutarse en
+RStudio o en Google Colab sin instalar paquetes.</p>
+<div class="callout-tip" title="Cuaderno completo y ejecutable">
+<p><strong>Cuaderno completo y ejecutable</strong></p>
+<p>El cuaderno sigue las secciones 2.1-2.8, incluye algoritmos de
+divisibilidad y primos, experimentos sobre precisión numérica y gráficas
+de exponentes y valor absoluto.</p>
+<p><a
+href="https://colab.research.google.com/github/gilbertorodriguez59/libro-algebra-superior-r-geogebra-dev/blob/main/notebooks/capitulo-02-enteros-reales-R.ipynb"
+class="btn btn-primary" target="_blank">Abrir en Google Colab</a> <a
+href="notebooks/capitulo-02-enteros-reales-R.ipynb" class="btn"
+target="_blank">Descargar el cuaderno</a></p>
+</div>
+<h3 class="unnumbered unlisted" id="objetivos-1">Objetivos</h3>
+<p>Al finalizar, el lector podrá:</p>
+<ul>
+<li>representar enteros y operar con cociente y residuo en R;</li>
+<li>experimentar con sucesiones que se demuestran por inducción;</li>
+<li>programar los algoritmos de Euclides y Euclides extendido;</li>
+<li>detectar primos y obtener factorizaciones;</li>
+<li>distinguir cálculo exacto simbólico de aproximación numérica;</li>
+<li>explorar propiedades de orden y densidad en la recta real;</li>
+<li>evaluar potencias con exponentes enteros y racionales atendiendo a
+su dominio;</li>
+<li>resolver e interpretar inecuaciones con valor absoluto.</li>
+</ul>
+<h2 data-number="2.1" id="sec-propiedades-enteros"><span
+class="header-section-number">2.1</span> Propiedades de los números
+enteros</h2>
+<h3 class="unnumbered unlisted"
+id="enteros-y-almacenamiento-en-r">Enteros y almacenamiento en R</h3>
+<p>R distingue valores enteros escritos con el sufijo <code>L</code> y
+valores numéricos almacenados, normalmente, en doble precisión.</p>
+<div class="sourceCode" id="cb34"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a>z <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="sc">-</span><span class="dv">3</span><span class="dt">L</span>, <span class="sc">-</span><span class="dv">2</span><span class="dt">L</span>, <span class="sc">-</span><span class="dv">1</span><span class="dt">L</span>, <span class="dv">0</span><span class="dt">L</span>, <span class="dv">1</span><span class="dt">L</span>, <span class="dv">2</span><span class="dt">L</span>, <span class="dv">3</span><span class="dt">L</span>)</span>
+<span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-3"><a href="#cb34-3" aria-hidden="true" tabindex="-1"></a><span class="fu">typeof</span>(z)</span>
+<span id="cb34-4"><a href="#cb34-4" aria-hidden="true" tabindex="-1"></a><span class="fu">typeof</span>(<span class="dv">3</span>)</span>
+<span id="cb34-5"><a href="#cb34-5" aria-hidden="true" tabindex="-1"></a><span class="fu">typeof</span>(<span class="dv">3</span><span class="dt">L</span>)</span></code></pre></div>
+<p>Para los ejemplos habituales ambos tipos producen las mismas
+operaciones. Sin embargo, una computadora representa un conjunto
+<strong>finito</strong> de valores; no contiene literalmente todos los
+elementos de <span class="math inline">\(\mathbb Z\)</span> ni de <span
+class="math inline">\(\mathbb R\)</span>.</p>
+<div class="sourceCode" id="cb35"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a>.Machine<span class="sc">$</span>integer.max</span>
+<span id="cb35-2"><a href="#cb35-2" aria-hidden="true" tabindex="-1"></a>.Machine<span class="sc">$</span>double.xmax</span></code></pre></div>
+<div class="callout-warning"
+title="Modelo matemático y representación computacional">
+<p><strong>Modelo matemático y representación computacional</strong></p>
+<p>Los enteros matemáticos no tienen cota superior. Los enteros
+almacenados en un tipo de computadora sí la tienen. Cuando un cálculo
+excede el rango o la precisión disponible, el resultado puede
+desbordarse o redondearse.</p>
+</div>
+<h3 class="unnumbered unlisted"
+id="comprobación-de-propiedades">Comprobación de propiedades</h3>
+<p>Elegimos tres enteros y comparamos ambos lados de las propiedades
+asociativa y distributiva.</p>
+<div class="sourceCode" id="cb36"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a>a <span class="ot">&lt;-</span> <span class="sc">-</span><span class="dv">7</span><span class="dt">L</span></span>
+<span id="cb36-2"><a href="#cb36-2" aria-hidden="true" tabindex="-1"></a>b <span class="ot">&lt;-</span> <span class="dv">5</span><span class="dt">L</span></span>
+<span id="cb36-3"><a href="#cb36-3" aria-hidden="true" tabindex="-1"></a>c <span class="ot">&lt;-</span> <span class="dv">3</span><span class="dt">L</span></span>
+<span id="cb36-4"><a href="#cb36-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb36-5"><a href="#cb36-5" aria-hidden="true" tabindex="-1"></a><span class="fu">data.frame</span>(</span>
+<span id="cb36-6"><a href="#cb36-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">propiedad =</span> <span class="fu">c</span>(<span class="st">&quot;asociativa de la suma&quot;</span>, <span class="st">&quot;distributiva&quot;</span>),</span>
+<span id="cb36-7"><a href="#cb36-7" aria-hidden="true" tabindex="-1"></a>  <span class="at">izquierda =</span> <span class="fu">c</span>((a <span class="sc">+</span> b) <span class="sc">+</span> c, a <span class="sc">*</span> (b <span class="sc">+</span> c)),</span>
+<span id="cb36-8"><a href="#cb36-8" aria-hidden="true" tabindex="-1"></a>  <span class="at">derecha =</span> <span class="fu">c</span>(a <span class="sc">+</span> (b <span class="sc">+</span> c), a <span class="sc">*</span> b <span class="sc">+</span> a <span class="sc">*</span> c)</span>
+<span id="cb36-9"><a href="#cb36-9" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div>
+<p>La igualdad para estos valores es una <strong>verificación</strong>,
+no una demostración para todos los enteros.</p>
+<h3 class="unnumbered unlisted" id="orden-en-la-recta-numérica">Orden en
+la recta numérica</h3>
+<div class="sourceCode" id="cb37"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="sc">-</span><span class="dv">6</span><span class="sc">:</span><span class="dv">6</span></span>
+<span id="cb37-2"><a href="#cb37-2" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(x, <span class="fu">rep</span>(<span class="dv">0</span>, <span class="fu">length</span>(x)), <span class="at">pch =</span> <span class="dv">19</span>,</span>
+<span id="cb37-3"><a href="#cb37-3" aria-hidden="true" tabindex="-1"></a>     <span class="at">xlab =</span> <span class="st">&quot;entero&quot;</span>, <span class="at">ylab =</span> <span class="st">&quot;&quot;</span>, <span class="at">yaxt =</span> <span class="st">&quot;n&quot;</span>,</span>
+<span id="cb37-4"><a href="#cb37-4" aria-hidden="true" tabindex="-1"></a>     <span class="at">main =</span> <span class="st">&quot;Enteros en la recta numérica&quot;</span>)</span>
+<span id="cb37-5"><a href="#cb37-5" aria-hidden="true" tabindex="-1"></a><span class="fu">abline</span>(<span class="at">h =</span> <span class="dv">0</span>, <span class="at">col =</span> <span class="st">&quot;gray50&quot;</span>)</span>
+<span id="cb37-6"><a href="#cb37-6" aria-hidden="true" tabindex="-1"></a><span class="fu">text</span>(x, <span class="fu">rep</span>(<span class="fl">0.08</span>, <span class="fu">length</span>(x)), <span class="at">labels =</span> x, <span class="at">cex =</span> <span class="fl">0.8</span>)</span></code></pre></div>
+<p>En la recta, <span class="math inline">\(a&lt;b\)</span> significa
+que <span class="math inline">\(a\)</span> aparece a la izquierda de
+<span class="math inline">\(b\)</span>. Sumar el mismo número traslada
+ambos puntos sin cambiar su orden.</p>
+<h2 data-number="2.2" id="sec-induccion"><span
+class="header-section-number">2.2</span> Inducción matemática</h2>
+<h3 class="unnumbered unlisted"
+id="explorar-antes-de-demostrar">Explorar antes de demostrar</h3>
+<p>Consideremos la conjetura</p>
+<p><span class="math display">\[
+1+3+\cdots +(2n-1)=n^2.
+\]</span></p>
+<p>R permite comparar ambos lados para los primeros valores.</p>
+<div class="sourceCode" id="cb38"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a>n <span class="ot">&lt;-</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">12</span></span>
+<span id="cb38-2"><a href="#cb38-2" aria-hidden="true" tabindex="-1"></a>lado_izquierdo <span class="ot">&lt;-</span> <span class="fu">cumsum</span>(<span class="dv">2</span> <span class="sc">*</span> n <span class="sc">-</span> <span class="dv">1</span>)</span>
+<span id="cb38-3"><a href="#cb38-3" aria-hidden="true" tabindex="-1"></a>lado_derecho <span class="ot">&lt;-</span> n<span class="sc">^</span><span class="dv">2</span></span>
+<span id="cb38-4"><a href="#cb38-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb38-5"><a href="#cb38-5" aria-hidden="true" tabindex="-1"></a><span class="fu">data.frame</span>(</span>
+<span id="cb38-6"><a href="#cb38-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">n =</span> n,</span>
+<span id="cb38-7"><a href="#cb38-7" aria-hidden="true" tabindex="-1"></a>  <span class="at">suma_impares =</span> lado_izquierdo,</span>
+<span id="cb38-8"><a href="#cb38-8" aria-hidden="true" tabindex="-1"></a>  <span class="at">cuadrado =</span> lado_derecho,</span>
+<span id="cb38-9"><a href="#cb38-9" aria-hidden="true" tabindex="-1"></a>  <span class="at">diferencia =</span> lado_izquierdo <span class="sc">-</span> lado_derecho</span>
+<span id="cb38-10"><a href="#cb38-10" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div>
+<p>Que la columna <code>diferencia</code> sea cero sugiere la identidad,
+pero la demostración inductiva explica por qué se conserva al pasar de
+<span class="math inline">\(n\)</span> a <span
+class="math inline">\(n+1\)</span>.</p>
+<figure id="fig-induccion-impares">
+<img src="figures/induccion-impares.png" style="width:88.0%"
+alt="La suma acumulada de impares coincide con los cuadrados perfectos." />
+<figcaption aria-hidden="true">La suma acumulada de impares coincide con
+los cuadrados perfectos.</figcaption>
+</figure>
+<h3 class="unnumbered unlisted"
+id="función-para-revisar-una-identidad">Función para revisar una
+identidad</h3>
+<div class="sourceCode" id="cb39"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a>revisar_identidad <span class="ot">&lt;-</span> <span class="cf">function</span>(<span class="at">n_max =</span> <span class="dv">50</span><span class="dt">L</span>) {</span>
+<span id="cb39-2"><a href="#cb39-2" aria-hidden="true" tabindex="-1"></a>  n <span class="ot">&lt;-</span> <span class="fu">seq_len</span>(n_max)</span>
+<span id="cb39-3"><a href="#cb39-3" aria-hidden="true" tabindex="-1"></a>  izquierda <span class="ot">&lt;-</span> <span class="fu">cumsum</span>(<span class="dv">2</span> <span class="sc">*</span> n <span class="sc">-</span> <span class="dv">1</span>)</span>
+<span id="cb39-4"><a href="#cb39-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">data.frame</span>(</span>
+<span id="cb39-5"><a href="#cb39-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">n =</span> n,</span>
+<span id="cb39-6"><a href="#cb39-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">izquierda =</span> izquierda,</span>
+<span id="cb39-7"><a href="#cb39-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">derecha =</span> n<span class="sc">^</span><span class="dv">2</span>,</span>
+<span id="cb39-8"><a href="#cb39-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">coincide =</span> izquierda <span class="sc">==</span> n<span class="sc">^</span><span class="dv">2</span></span>
+<span id="cb39-9"><a href="#cb39-9" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb39-10"><a href="#cb39-10" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb39-11"><a href="#cb39-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb39-12"><a href="#cb39-12" aria-hidden="true" tabindex="-1"></a>resultado <span class="ot">&lt;-</span> <span class="fu">revisar_identidad</span>(<span class="dv">20</span><span class="dt">L</span>)</span>
+<span id="cb39-13"><a href="#cb39-13" aria-hidden="true" tabindex="-1"></a><span class="fu">all</span>(resultado<span class="sc">$</span>coincide)</span></code></pre></div>
+<h3 class="unnumbered unlisted"
+id="interactivo-construir-el-siguiente-cuadrado">Interactivo: construir
+el siguiente cuadrado</h3>
+<p>Seleccione <span class="math inline">\(n\)</span> y observe cómo
+<span class="math inline">\(n^2\)</span> puntos, más una franja de <span
+class="math inline">\(2n+1\)</span> puntos, forman <span
+class="math inline">\((n+1)^2\)</span>.</p>
+<p><a href="interactivos/induccion-impares.html" class="btn btn-primary"
+target="_blank">Abrir el laboratorio de inducción</a></p>
+<div class="content-visible" data-when-format="html">
+<iframe class="interactive-frame induction" src="interactivos/induccion-impares.html" title="Construcción interactiva de la suma de números impares" loading="lazy">
+</iframe>
+</div>
+<h3 class="unnumbered unlisted" id="lo-que-r-no-demuestra">Lo que R no
+demuestra</h3>
+<p>No existe una instrucción que enumere todos los naturales y termine.
+La prueba formal requiere:</p>
+<ol type="1">
+<li>comprobar el caso base;</li>
+<li>suponer la fórmula para un entero arbitrario <span
+class="math inline">\(k\)</span>;</li>
+<li>deducir la fórmula para <span
+class="math inline">\(k+1\)</span>.</li>
+</ol>
+<p>R ayuda a encontrar errores y contraejemplos. Si una afirmación falla
+para algún valor ensayado, queda refutada; si no falla, todavía necesita
+demostración.</p>
+<h2 data-number="2.3" id="sec-divisibilidad"><span
+class="header-section-number">2.3</span> Divisibilidad</h2>
+<h3 class="unnumbered unlisted" id="cociente-y-residuo">Cociente y
+residuo</h3>
+<p>En R, <code>%/%</code> calcula el cociente entero y <code>%%</code>
+el residuo.</p>
+<div class="sourceCode" id="cb40"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a>a <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">47</span><span class="dt">L</span>, <span class="sc">-</span><span class="dv">47</span><span class="dt">L</span>)</span>
+<span id="cb40-2"><a href="#cb40-2" aria-hidden="true" tabindex="-1"></a>d <span class="ot">&lt;-</span> <span class="dv">6</span><span class="dt">L</span></span>
+<span id="cb40-3"><a href="#cb40-3" aria-hidden="true" tabindex="-1"></a>q <span class="ot">&lt;-</span> a <span class="sc">%/%</span> d</span>
+<span id="cb40-4"><a href="#cb40-4" aria-hidden="true" tabindex="-1"></a>r <span class="ot">&lt;-</span> a <span class="sc">%%</span> d</span>
+<span id="cb40-5"><a href="#cb40-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb40-6"><a href="#cb40-6" aria-hidden="true" tabindex="-1"></a><span class="fu">data.frame</span>(</span>
+<span id="cb40-7"><a href="#cb40-7" aria-hidden="true" tabindex="-1"></a>  <span class="at">a =</span> a,</span>
+<span id="cb40-8"><a href="#cb40-8" aria-hidden="true" tabindex="-1"></a>  <span class="at">d =</span> d,</span>
+<span id="cb40-9"><a href="#cb40-9" aria-hidden="true" tabindex="-1"></a>  <span class="at">q =</span> q,</span>
+<span id="cb40-10"><a href="#cb40-10" aria-hidden="true" tabindex="-1"></a>  <span class="at">r =</span> r,</span>
+<span id="cb40-11"><a href="#cb40-11" aria-hidden="true" tabindex="-1"></a>  <span class="at">reconstruccion =</span> d <span class="sc">*</span> q <span class="sc">+</span> r</span>
+<span id="cb40-12"><a href="#cb40-12" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div>
+<p>Observe que R elige el residuo de modo que <span
+class="math inline">\(0\le r&lt;d\)</span> cuando <span
+class="math inline">\(d&gt;0\)</span>.</p>
+<p>Una función de divisibilidad puede escribirse así:</p>
+<div class="sourceCode" id="cb41"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a>divide <span class="ot">&lt;-</span> <span class="cf">function</span>(a, b) {</span>
+<span id="cb41-2"><a href="#cb41-2" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (a <span class="sc">==</span> <span class="dv">0</span>) <span class="fu">stop</span>(<span class="st">&quot;El divisor no puede ser cero&quot;</span>)</span>
+<span id="cb41-3"><a href="#cb41-3" aria-hidden="true" tabindex="-1"></a>  b <span class="sc">%%</span> a <span class="sc">==</span> <span class="dv">0</span></span>
+<span id="cb41-4"><a href="#cb41-4" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb41-5"><a href="#cb41-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-6"><a href="#cb41-6" aria-hidden="true" tabindex="-1"></a><span class="fu">c</span>(<span class="st">`</span><span class="at">7 divide 42</span><span class="st">`</span> <span class="ot">=</span> <span class="fu">divide</span>(<span class="dv">7</span><span class="dt">L</span>, <span class="dv">42</span><span class="dt">L</span>),</span>
+<span id="cb41-7"><a href="#cb41-7" aria-hidden="true" tabindex="-1"></a>  <span class="st">`</span><span class="at">7 divide 40</span><span class="st">`</span> <span class="ot">=</span> <span class="fu">divide</span>(<span class="dv">7</span><span class="dt">L</span>, <span class="dv">40</span><span class="dt">L</span>))</span></code></pre></div>
+<h3 class="unnumbered unlisted" id="algoritmo-de-euclides">Algoritmo de
+Euclides</h3>
+<div class="sourceCode" id="cb42"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a>euclides <span class="ot">&lt;-</span> <span class="cf">function</span>(a, b) {</span>
+<span id="cb42-2"><a href="#cb42-2" aria-hidden="true" tabindex="-1"></a>  a <span class="ot">&lt;-</span> <span class="fu">abs</span>(<span class="fu">as.integer</span>(a))</span>
+<span id="cb42-3"><a href="#cb42-3" aria-hidden="true" tabindex="-1"></a>  b <span class="ot">&lt;-</span> <span class="fu">abs</span>(<span class="fu">as.integer</span>(b))</span>
+<span id="cb42-4"><a href="#cb42-4" aria-hidden="true" tabindex="-1"></a>  pasos <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
+<span id="cb42-5"><a href="#cb42-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">dividendo =</span> <span class="fu">integer</span>(), <span class="at">divisor =</span> <span class="fu">integer</span>(),</span>
+<span id="cb42-6"><a href="#cb42-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">cociente =</span> <span class="fu">integer</span>(), <span class="at">residuo =</span> <span class="fu">integer</span>()</span>
+<span id="cb42-7"><a href="#cb42-7" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb42-8"><a href="#cb42-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb42-9"><a href="#cb42-9" aria-hidden="true" tabindex="-1"></a>  <span class="cf">while</span> (b <span class="sc">!=</span> <span class="dv">0</span><span class="dt">L</span>) {</span>
+<span id="cb42-10"><a href="#cb42-10" aria-hidden="true" tabindex="-1"></a>    q <span class="ot">&lt;-</span> a <span class="sc">%/%</span> b</span>
+<span id="cb42-11"><a href="#cb42-11" aria-hidden="true" tabindex="-1"></a>    r <span class="ot">&lt;-</span> a <span class="sc">%%</span> b</span>
+<span id="cb42-12"><a href="#cb42-12" aria-hidden="true" tabindex="-1"></a>    pasos <span class="ot">&lt;-</span> <span class="fu">rbind</span>(</span>
+<span id="cb42-13"><a href="#cb42-13" aria-hidden="true" tabindex="-1"></a>      pasos,</span>
+<span id="cb42-14"><a href="#cb42-14" aria-hidden="true" tabindex="-1"></a>      <span class="fu">data.frame</span>(<span class="at">dividendo =</span> a, <span class="at">divisor =</span> b,</span>
+<span id="cb42-15"><a href="#cb42-15" aria-hidden="true" tabindex="-1"></a>                 <span class="at">cociente =</span> q, <span class="at">residuo =</span> r)</span>
+<span id="cb42-16"><a href="#cb42-16" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb42-17"><a href="#cb42-17" aria-hidden="true" tabindex="-1"></a>    a <span class="ot">&lt;-</span> b</span>
+<span id="cb42-18"><a href="#cb42-18" aria-hidden="true" tabindex="-1"></a>    b <span class="ot">&lt;-</span> r</span>
+<span id="cb42-19"><a href="#cb42-19" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb42-20"><a href="#cb42-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb42-21"><a href="#cb42-21" aria-hidden="true" tabindex="-1"></a>  <span class="fu">list</span>(<span class="at">mcd =</span> a, <span class="at">pasos =</span> pasos)</span>
+<span id="cb42-22"><a href="#cb42-22" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb42-23"><a href="#cb42-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb42-24"><a href="#cb42-24" aria-hidden="true" tabindex="-1"></a>resultado <span class="ot">&lt;-</span> <span class="fu">euclides</span>(<span class="dv">252</span><span class="dt">L</span>, <span class="dv">198</span><span class="dt">L</span>)</span>
+<span id="cb42-25"><a href="#cb42-25" aria-hidden="true" tabindex="-1"></a>resultado<span class="sc">$</span>pasos</span>
+<span id="cb42-26"><a href="#cb42-26" aria-hidden="true" tabindex="-1"></a>resultado<span class="sc">$</span>mcd</span></code></pre></div>
+<figure id="fig-algoritmo-euclides">
+<img src="figures/algoritmo-euclides.png" style="width:88.0%"
+alt="Los pares sucesivos del algoritmo de Euclides terminan en el máximo común divisor." />
+<figcaption aria-hidden="true">Los pares sucesivos del algoritmo de
+Euclides terminan en el máximo común divisor.</figcaption>
+</figure>
+<h3 class="unnumbered unlisted"
+id="euclides-extendido-y-coeficientes-de-bézout">Euclides extendido y
+coeficientes de Bézout</h3>
+<div class="sourceCode" id="cb43"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb43-1"><a href="#cb43-1" aria-hidden="true" tabindex="-1"></a>euclides_extendido <span class="ot">&lt;-</span> <span class="cf">function</span>(a, b) {</span>
+<span id="cb43-2"><a href="#cb43-2" aria-hidden="true" tabindex="-1"></a>  viejo_r <span class="ot">&lt;-</span> <span class="fu">as.integer</span>(a); r <span class="ot">&lt;-</span> <span class="fu">as.integer</span>(b)</span>
+<span id="cb43-3"><a href="#cb43-3" aria-hidden="true" tabindex="-1"></a>  viejo_s <span class="ot">&lt;-</span> <span class="dv">1</span><span class="dt">L</span>; s <span class="ot">&lt;-</span> <span class="dv">0</span><span class="dt">L</span></span>
+<span id="cb43-4"><a href="#cb43-4" aria-hidden="true" tabindex="-1"></a>  viejo_t <span class="ot">&lt;-</span> <span class="dv">0</span><span class="dt">L</span>; t <span class="ot">&lt;-</span> <span class="dv">1</span><span class="dt">L</span></span>
+<span id="cb43-5"><a href="#cb43-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-6"><a href="#cb43-6" aria-hidden="true" tabindex="-1"></a>  <span class="cf">while</span> (r <span class="sc">!=</span> <span class="dv">0</span><span class="dt">L</span>) {</span>
+<span id="cb43-7"><a href="#cb43-7" aria-hidden="true" tabindex="-1"></a>    q <span class="ot">&lt;-</span> viejo_r <span class="sc">%/%</span> r</span>
+<span id="cb43-8"><a href="#cb43-8" aria-hidden="true" tabindex="-1"></a>    aux <span class="ot">&lt;-</span> viejo_r <span class="sc">-</span> q <span class="sc">*</span> r; viejo_r <span class="ot">&lt;-</span> r; r <span class="ot">&lt;-</span> aux</span>
+<span id="cb43-9"><a href="#cb43-9" aria-hidden="true" tabindex="-1"></a>    aux <span class="ot">&lt;-</span> viejo_s <span class="sc">-</span> q <span class="sc">*</span> s; viejo_s <span class="ot">&lt;-</span> s; s <span class="ot">&lt;-</span> aux</span>
+<span id="cb43-10"><a href="#cb43-10" aria-hidden="true" tabindex="-1"></a>    aux <span class="ot">&lt;-</span> viejo_t <span class="sc">-</span> q <span class="sc">*</span> t; viejo_t <span class="ot">&lt;-</span> t; t <span class="ot">&lt;-</span> aux</span>
+<span id="cb43-11"><a href="#cb43-11" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb43-12"><a href="#cb43-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-13"><a href="#cb43-13" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (viejo_r <span class="sc">&lt;</span> <span class="dv">0</span><span class="dt">L</span>) {</span>
+<span id="cb43-14"><a href="#cb43-14" aria-hidden="true" tabindex="-1"></a>    viejo_r <span class="ot">&lt;-</span> <span class="sc">-</span>viejo_r</span>
+<span id="cb43-15"><a href="#cb43-15" aria-hidden="true" tabindex="-1"></a>    viejo_s <span class="ot">&lt;-</span> <span class="sc">-</span>viejo_s</span>
+<span id="cb43-16"><a href="#cb43-16" aria-hidden="true" tabindex="-1"></a>    viejo_t <span class="ot">&lt;-</span> <span class="sc">-</span>viejo_t</span>
+<span id="cb43-17"><a href="#cb43-17" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb43-18"><a href="#cb43-18" aria-hidden="true" tabindex="-1"></a>  <span class="fu">c</span>(<span class="at">mcd =</span> viejo_r, <span class="at">x =</span> viejo_s, <span class="at">y =</span> viejo_t)</span>
+<span id="cb43-19"><a href="#cb43-19" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb43-20"><a href="#cb43-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-21"><a href="#cb43-21" aria-hidden="true" tabindex="-1"></a>bezout <span class="ot">&lt;-</span> <span class="fu">euclides_extendido</span>(<span class="dv">252</span><span class="dt">L</span>, <span class="dv">198</span><span class="dt">L</span>)</span>
+<span id="cb43-22"><a href="#cb43-22" aria-hidden="true" tabindex="-1"></a>bezout</span>
+<span id="cb43-23"><a href="#cb43-23" aria-hidden="true" tabindex="-1"></a><span class="dv">252</span><span class="dt">L</span> <span class="sc">*</span> bezout[<span class="st">&quot;x&quot;</span>] <span class="sc">+</span> <span class="dv">198</span><span class="dt">L</span> <span class="sc">*</span> bezout[<span class="st">&quot;y&quot;</span>]</span></code></pre></div>
+<h3 class="unnumbered unlisted"
+id="interactivo-residuos-sucesivos">Interactivo: residuos sucesivos</h3>
+<p>Introduzca dos enteros positivos. El laboratorio muestra cada
+división y señala el último residuo no nulo.</p>
+<p><a href="interactivos/algoritmo-euclides.html"
+class="btn btn-primary" target="_blank">Abrir el algoritmo de
+Euclides</a></p>
+<div class="content-visible" data-when-format="html">
+<iframe class="interactive-frame euclid" src="interactivos/algoritmo-euclides.html" title="Algoritmo de Euclides interactivo" loading="lazy">
+</iframe>
+</div>
+<h2 data-number="2.4" id="sec-primos-factorizacion"><span
+class="header-section-number">2.4</span> Números primos y
+factorización</h2>
+<h3 class="unnumbered unlisted"
+id="prueba-de-primalidad-por-división">Prueba de primalidad por
+división</h3>
+<p>Para decidir si <span class="math inline">\(n\)</span> es primo basta
+probar divisores hasta <span class="math inline">\(\sqrt n\)</span>.</p>
+<div class="sourceCode" id="cb44"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a>es_primo <span class="ot">&lt;-</span> <span class="cf">function</span>(n) {</span>
+<span id="cb44-2"><a href="#cb44-2" aria-hidden="true" tabindex="-1"></a>  n <span class="ot">&lt;-</span> <span class="fu">as.integer</span>(n)</span>
+<span id="cb44-3"><a href="#cb44-3" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (n <span class="sc">&lt;</span> <span class="dv">2</span><span class="dt">L</span>) <span class="fu">return</span>(<span class="cn">FALSE</span>)</span>
+<span id="cb44-4"><a href="#cb44-4" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (n <span class="sc">==</span> <span class="dv">2</span><span class="dt">L</span>) <span class="fu">return</span>(<span class="cn">TRUE</span>)</span>
+<span id="cb44-5"><a href="#cb44-5" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (n <span class="sc">%%</span> <span class="dv">2</span><span class="dt">L</span> <span class="sc">==</span> <span class="dv">0</span><span class="dt">L</span>) <span class="fu">return</span>(<span class="cn">FALSE</span>)</span>
+<span id="cb44-6"><a href="#cb44-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb44-7"><a href="#cb44-7" aria-hidden="true" tabindex="-1"></a>  limite <span class="ot">&lt;-</span> <span class="fu">floor</span>(<span class="fu">sqrt</span>(n))</span>
+<span id="cb44-8"><a href="#cb44-8" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (limite <span class="sc">&lt;</span> <span class="dv">3</span><span class="dt">L</span>) <span class="fu">return</span>(<span class="cn">TRUE</span>)</span>
+<span id="cb44-9"><a href="#cb44-9" aria-hidden="true" tabindex="-1"></a>  candidatos <span class="ot">&lt;-</span> <span class="fu">seq.int</span>(<span class="dv">3</span><span class="dt">L</span>, limite, <span class="at">by =</span> <span class="dv">2</span><span class="dt">L</span>)</span>
+<span id="cb44-10"><a href="#cb44-10" aria-hidden="true" tabindex="-1"></a>  <span class="sc">!</span><span class="fu">any</span>(n <span class="sc">%%</span> candidatos <span class="sc">==</span> <span class="dv">0</span><span class="dt">L</span>)</span>
+<span id="cb44-11"><a href="#cb44-11" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb44-12"><a href="#cb44-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb44-13"><a href="#cb44-13" aria-hidden="true" tabindex="-1"></a><span class="fu">sapply</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">30</span>, es_primo)</span>
+<span id="cb44-14"><a href="#cb44-14" aria-hidden="true" tabindex="-1"></a>(<span class="dv">1</span><span class="sc">:</span><span class="dv">100</span>)[<span class="fu">sapply</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">100</span>, es_primo)]</span></code></pre></div>
+<h3 class="unnumbered unlisted" id="criba-de-eratóstenes">Criba de
+Eratóstenes</h3>
+<p>La criba elimina múltiplos y conserva los primos no mayores que un
+límite.</p>
+<div class="sourceCode" id="cb45"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb45-1"><a href="#cb45-1" aria-hidden="true" tabindex="-1"></a>criba <span class="ot">&lt;-</span> <span class="cf">function</span>(n) {</span>
+<span id="cb45-2"><a href="#cb45-2" aria-hidden="true" tabindex="-1"></a>  n <span class="ot">&lt;-</span> <span class="fu">as.integer</span>(n)</span>
+<span id="cb45-3"><a href="#cb45-3" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (n <span class="sc">&lt;</span> <span class="dv">2</span><span class="dt">L</span>) <span class="fu">return</span>(<span class="fu">integer</span>())</span>
+<span id="cb45-4"><a href="#cb45-4" aria-hidden="true" tabindex="-1"></a>  primo <span class="ot">&lt;-</span> <span class="fu">rep</span>(<span class="cn">TRUE</span>, n)</span>
+<span id="cb45-5"><a href="#cb45-5" aria-hidden="true" tabindex="-1"></a>  primo[<span class="dv">1</span>] <span class="ot">&lt;-</span> <span class="cn">FALSE</span></span>
+<span id="cb45-6"><a href="#cb45-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb45-7"><a href="#cb45-7" aria-hidden="true" tabindex="-1"></a>  limite <span class="ot">&lt;-</span> <span class="fu">floor</span>(<span class="fu">sqrt</span>(n))</span>
+<span id="cb45-8"><a href="#cb45-8" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (limite <span class="sc">&gt;=</span> <span class="dv">2</span><span class="dt">L</span>) {</span>
+<span id="cb45-9"><a href="#cb45-9" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> (p <span class="cf">in</span> <span class="dv">2</span><span class="sc">:</span>limite) {</span>
+<span id="cb45-10"><a href="#cb45-10" aria-hidden="true" tabindex="-1"></a>      <span class="cf">if</span> (primo[p]) primo[<span class="fu">seq.int</span>(p <span class="sc">*</span> p, n, <span class="at">by =</span> p)] <span class="ot">&lt;-</span> <span class="cn">FALSE</span></span>
+<span id="cb45-11"><a href="#cb45-11" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb45-12"><a href="#cb45-12" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb45-13"><a href="#cb45-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">which</span>(primo)</span>
+<span id="cb45-14"><a href="#cb45-14" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb45-15"><a href="#cb45-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb45-16"><a href="#cb45-16" aria-hidden="true" tabindex="-1"></a><span class="fu">criba</span>(<span class="dv">100</span><span class="dt">L</span>)</span></code></pre></div>
+<h3 class="unnumbered unlisted"
+id="factorización-por-divisiones-sucesivas">Factorización por divisiones
+sucesivas</h3>
+<div class="sourceCode" id="cb46"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb46-1"><a href="#cb46-1" aria-hidden="true" tabindex="-1"></a>factorizar <span class="ot">&lt;-</span> <span class="cf">function</span>(n) {</span>
+<span id="cb46-2"><a href="#cb46-2" aria-hidden="true" tabindex="-1"></a>  n <span class="ot">&lt;-</span> <span class="fu">abs</span>(<span class="fu">as.integer</span>(n))</span>
+<span id="cb46-3"><a href="#cb46-3" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (n <span class="sc">&lt;</span> <span class="dv">2</span><span class="dt">L</span>) <span class="fu">return</span>(<span class="fu">integer</span>())</span>
+<span id="cb46-4"><a href="#cb46-4" aria-hidden="true" tabindex="-1"></a>  factores <span class="ot">&lt;-</span> <span class="fu">integer</span>()</span>
+<span id="cb46-5"><a href="#cb46-5" aria-hidden="true" tabindex="-1"></a>  d <span class="ot">&lt;-</span> <span class="dv">2</span><span class="dt">L</span></span>
+<span id="cb46-6"><a href="#cb46-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb46-7"><a href="#cb46-7" aria-hidden="true" tabindex="-1"></a>  <span class="cf">while</span> (d <span class="sc">*</span> d <span class="sc">&lt;=</span> n) {</span>
+<span id="cb46-8"><a href="#cb46-8" aria-hidden="true" tabindex="-1"></a>    <span class="cf">while</span> (n <span class="sc">%%</span> d <span class="sc">==</span> <span class="dv">0</span><span class="dt">L</span>) {</span>
+<span id="cb46-9"><a href="#cb46-9" aria-hidden="true" tabindex="-1"></a>      factores <span class="ot">&lt;-</span> <span class="fu">c</span>(factores, d)</span>
+<span id="cb46-10"><a href="#cb46-10" aria-hidden="true" tabindex="-1"></a>      n <span class="ot">&lt;-</span> n <span class="sc">%/%</span> d</span>
+<span id="cb46-11"><a href="#cb46-11" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb46-12"><a href="#cb46-12" aria-hidden="true" tabindex="-1"></a>    d <span class="ot">&lt;-</span> <span class="cf">if</span> (d <span class="sc">==</span> <span class="dv">2</span><span class="dt">L</span>) <span class="dv">3</span><span class="dt">L</span> <span class="cf">else</span> d <span class="sc">+</span> <span class="dv">2</span><span class="dt">L</span></span>
+<span id="cb46-13"><a href="#cb46-13" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb46-14"><a href="#cb46-14" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (n <span class="sc">&gt;</span> <span class="dv">1</span><span class="dt">L</span>) factores <span class="ot">&lt;-</span> <span class="fu">c</span>(factores, n)</span>
+<span id="cb46-15"><a href="#cb46-15" aria-hidden="true" tabindex="-1"></a>  factores</span>
+<span id="cb46-16"><a href="#cb46-16" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb46-17"><a href="#cb46-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb46-18"><a href="#cb46-18" aria-hidden="true" tabindex="-1"></a><span class="fu">factorizar</span>(<span class="dv">756</span><span class="dt">L</span>)</span>
+<span id="cb46-19"><a href="#cb46-19" aria-hidden="true" tabindex="-1"></a><span class="fu">table</span>(<span class="fu">factorizar</span>(<span class="dv">756</span><span class="dt">L</span>))</span></code></pre></div>
+<figure id="fig-arbol-factorizacion">
+<img src="figures/arbol-factorizacion.png" style="width:82.0%"
+alt="Cadena de factorización y descomposición prima de 756." />
+<figcaption aria-hidden="true">Cadena de factorización y descomposición
+prima de <span class="math inline">\(756\)</span>.</figcaption>
+</figure>
+<h3 class="unnumbered unlisted" id="mcd-y-mcm">MCD y MCM</h3>
+<div class="sourceCode" id="cb47"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb47-1"><a href="#cb47-1" aria-hidden="true" tabindex="-1"></a>mcd <span class="ot">&lt;-</span> <span class="cf">function</span>(a, b) <span class="fu">euclides</span>(a, b)<span class="sc">$</span>mcd</span>
+<span id="cb47-2"><a href="#cb47-2" aria-hidden="true" tabindex="-1"></a>mcm <span class="ot">&lt;-</span> <span class="cf">function</span>(a, b) {</span>
+<span id="cb47-3"><a href="#cb47-3" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (a <span class="sc">==</span> <span class="dv">0</span><span class="dt">L</span> <span class="sc">||</span> b <span class="sc">==</span> <span class="dv">0</span><span class="dt">L</span>) <span class="fu">return</span>(<span class="dv">0</span><span class="dt">L</span>)</span>
+<span id="cb47-4"><a href="#cb47-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">abs</span>(a <span class="sc">%/%</span> <span class="fu">mcd</span>(a, b) <span class="sc">*</span> b)</span>
+<span id="cb47-5"><a href="#cb47-5" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb47-6"><a href="#cb47-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb47-7"><a href="#cb47-7" aria-hidden="true" tabindex="-1"></a>a <span class="ot">&lt;-</span> <span class="dv">840</span><span class="dt">L</span></span>
+<span id="cb47-8"><a href="#cb47-8" aria-hidden="true" tabindex="-1"></a>b <span class="ot">&lt;-</span> <span class="dv">378</span><span class="dt">L</span></span>
+<span id="cb47-9"><a href="#cb47-9" aria-hidden="true" tabindex="-1"></a><span class="fu">c</span>(<span class="at">mcd =</span> <span class="fu">mcd</span>(a, b), <span class="at">mcm =</span> <span class="fu">mcm</span>(a, b), <span class="at">producto =</span> a <span class="sc">*</span> b)</span>
+<span id="cb47-10"><a href="#cb47-10" aria-hidden="true" tabindex="-1"></a><span class="fu">mcd</span>(a, b) <span class="sc">*</span> <span class="fu">mcm</span>(a, b) <span class="sc">==</span> a <span class="sc">*</span> b</span></code></pre></div>
+<h2 data-number="2.5" id="sec-racionales-reales"><span
+class="header-section-number">2.5</span> Números racionales y números
+reales</h2>
+<h3 class="unnumbered unlisted"
+id="representar-una-fracción-exactamente">Representar una fracción
+exactamente</h3>
+<p>R base representa <code>1/3</code> mediante una aproximación de punto
+flotante. Para conservar una fracción exacta podemos guardar numerador y
+denominador reducidos.</p>
+<div class="sourceCode" id="cb48"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb48-1"><a href="#cb48-1" aria-hidden="true" tabindex="-1"></a>fraccion <span class="ot">&lt;-</span> <span class="cf">function</span>(num, <span class="at">den =</span> <span class="dv">1</span><span class="dt">L</span>) {</span>
+<span id="cb48-2"><a href="#cb48-2" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (den <span class="sc">==</span> <span class="dv">0</span><span class="dt">L</span>) <span class="fu">stop</span>(<span class="st">&quot;El denominador no puede ser cero&quot;</span>)</span>
+<span id="cb48-3"><a href="#cb48-3" aria-hidden="true" tabindex="-1"></a>  num <span class="ot">&lt;-</span> <span class="fu">as.integer</span>(num)</span>
+<span id="cb48-4"><a href="#cb48-4" aria-hidden="true" tabindex="-1"></a>  den <span class="ot">&lt;-</span> <span class="fu">as.integer</span>(den)</span>
+<span id="cb48-5"><a href="#cb48-5" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (den <span class="sc">&lt;</span> <span class="dv">0</span><span class="dt">L</span>) { num <span class="ot">&lt;-</span> <span class="sc">-</span>num; den <span class="ot">&lt;-</span> <span class="sc">-</span>den }</span>
+<span id="cb48-6"><a href="#cb48-6" aria-hidden="true" tabindex="-1"></a>  g <span class="ot">&lt;-</span> <span class="fu">mcd</span>(<span class="fu">abs</span>(num), den)</span>
+<span id="cb48-7"><a href="#cb48-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">c</span>(<span class="at">num =</span> num <span class="sc">%/%</span> g, <span class="at">den =</span> den <span class="sc">%/%</span> g)</span>
+<span id="cb48-8"><a href="#cb48-8" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb48-9"><a href="#cb48-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb48-10"><a href="#cb48-10" aria-hidden="true" tabindex="-1"></a><span class="fu">fraccion</span>(<span class="dv">18</span><span class="dt">L</span>, <span class="dv">24</span><span class="dt">L</span>)</span>
+<span id="cb48-11"><a href="#cb48-11" aria-hidden="true" tabindex="-1"></a><span class="fu">fraccion</span>(<span class="sc">-</span><span class="dv">15</span><span class="dt">L</span>, <span class="sc">-</span><span class="dv">35</span><span class="dt">L</span>)</span></code></pre></div>
+<h3 class="unnumbered unlisted"
+id="aproximación-y-precisión">Aproximación y precisión</h3>
+<p>El conocido ejemplo siguiente muestra que una igualdad
+matemáticamente correcta puede no ser exacta en aritmética binaria de
+punto flotante.</p>
+<div class="sourceCode" id="cb49"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb49-1"><a href="#cb49-1" aria-hidden="true" tabindex="-1"></a><span class="fl">0.1</span> <span class="sc">+</span> <span class="fl">0.2</span></span>
+<span id="cb49-2"><a href="#cb49-2" aria-hidden="true" tabindex="-1"></a>(<span class="fl">0.1</span> <span class="sc">+</span> <span class="fl">0.2</span>) <span class="sc">==</span> <span class="fl">0.3</span></span>
+<span id="cb49-3"><a href="#cb49-3" aria-hidden="true" tabindex="-1"></a><span class="fu">all.equal</span>(<span class="fl">0.1</span> <span class="sc">+</span> <span class="fl">0.2</span>, <span class="fl">0.3</span>)</span></code></pre></div>
+<p>Para comparar resultados numéricos se utiliza una tolerancia:</p>
+<div class="sourceCode" id="cb50"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb50-1"><a href="#cb50-1" aria-hidden="true" tabindex="-1"></a>iguales_aprox <span class="ot">&lt;-</span> <span class="cf">function</span>(x, y, <span class="at">tolerancia =</span> <span class="fl">1e-12</span>) {</span>
+<span id="cb50-2"><a href="#cb50-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">abs</span>(x <span class="sc">-</span> y) <span class="sc">&lt;=</span> tolerancia</span>
+<span id="cb50-3"><a href="#cb50-3" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb50-4"><a href="#cb50-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb50-5"><a href="#cb50-5" aria-hidden="true" tabindex="-1"></a><span class="fu">iguales_aprox</span>(<span class="fl">0.1</span> <span class="sc">+</span> <span class="fl">0.2</span>, <span class="fl">0.3</span>)</span></code></pre></div>
+<h3 class="unnumbered unlisted"
+id="racionales-e-irracionales-en-la-recta">Racionales e irracionales en
+la recta</h3>
+<div class="sourceCode" id="cb51"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb51-1"><a href="#cb51-1" aria-hidden="true" tabindex="-1"></a>valores <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">1</span><span class="sc">/</span><span class="dv">2</span>, <span class="fu">sqrt</span>(<span class="dv">2</span>), <span class="dv">3</span><span class="sc">/</span><span class="dv">2</span>, <span class="fu">sqrt</span>(<span class="dv">3</span>), <span class="dv">2</span>)</span>
+<span id="cb51-2"><a href="#cb51-2" aria-hidden="true" tabindex="-1"></a>etiquetas <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;0&quot;</span>, <span class="st">&quot;1/2&quot;</span>, <span class="st">&quot;sqrt(2)&quot;</span>, <span class="st">&quot;3/2&quot;</span>, <span class="st">&quot;sqrt(3)&quot;</span>, <span class="st">&quot;2&quot;</span>)</span>
+<span id="cb51-3"><a href="#cb51-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb51-4"><a href="#cb51-4" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(valores, <span class="fu">rep</span>(<span class="dv">0</span>, <span class="fu">length</span>(valores)), <span class="at">pch =</span> <span class="dv">19</span>,</span>
+<span id="cb51-5"><a href="#cb51-5" aria-hidden="true" tabindex="-1"></a>     <span class="at">xlim =</span> <span class="fu">c</span>(<span class="sc">-</span><span class="fl">0.1</span>, <span class="fl">2.1</span>), <span class="at">ylim =</span> <span class="fu">c</span>(<span class="sc">-</span><span class="fl">0.35</span>, <span class="fl">0.35</span>),</span>
+<span id="cb51-6"><a href="#cb51-6" aria-hidden="true" tabindex="-1"></a>     <span class="at">axes =</span> <span class="cn">FALSE</span>, <span class="at">xlab =</span> <span class="st">&quot;recta real&quot;</span>, <span class="at">ylab =</span> <span class="st">&quot;&quot;</span>)</span>
+<span id="cb51-7"><a href="#cb51-7" aria-hidden="true" tabindex="-1"></a><span class="fu">axis</span>(<span class="dv">1</span>)</span>
+<span id="cb51-8"><a href="#cb51-8" aria-hidden="true" tabindex="-1"></a><span class="fu">abline</span>(<span class="at">h =</span> <span class="dv">0</span>, <span class="at">col =</span> <span class="st">&quot;gray50&quot;</span>)</span>
+<span id="cb51-9"><a href="#cb51-9" aria-hidden="true" tabindex="-1"></a><span class="fu">text</span>(valores, <span class="fu">rep</span>(<span class="fl">0.12</span>, <span class="fu">length</span>(valores)), etiquetas, <span class="at">cex =</span> <span class="fl">0.8</span>)</span></code></pre></div>
+<figure id="fig-jerarquia-numeros">
+<img src="figures/jerarquia-numeros.png" style="width:92.0%"
+alt="Los naturales, enteros, racionales e irracionales se sitúan dentro de los reales." />
+<figcaption aria-hidden="true">Los naturales, enteros, racionales e
+irracionales se sitúan dentro de los reales.</figcaption>
+</figure>
+<h2 data-number="2.6" id="sec-propiedades-reales"><span
+class="header-section-number">2.6</span> Propiedades de los números
+reales</h2>
+<h3 class="unnumbered unlisted" id="orden-y-operaciones">Orden y
+operaciones</h3>
+<p>Podemos observar que multiplicar por un número negativo invierte una
+desigualdad.</p>
+<div class="sourceCode" id="cb52"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb52-1"><a href="#cb52-1" aria-hidden="true" tabindex="-1"></a>a <span class="ot">&lt;-</span> <span class="sc">-</span><span class="dv">2</span></span>
+<span id="cb52-2"><a href="#cb52-2" aria-hidden="true" tabindex="-1"></a>b <span class="ot">&lt;-</span> <span class="dv">5</span></span>
+<span id="cb52-3"><a href="#cb52-3" aria-hidden="true" tabindex="-1"></a>c_positivo <span class="ot">&lt;-</span> <span class="dv">3</span></span>
+<span id="cb52-4"><a href="#cb52-4" aria-hidden="true" tabindex="-1"></a>c_negativo <span class="ot">&lt;-</span> <span class="sc">-</span><span class="dv">3</span></span>
+<span id="cb52-5"><a href="#cb52-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-6"><a href="#cb52-6" aria-hidden="true" tabindex="-1"></a><span class="fu">data.frame</span>(</span>
+<span id="cb52-7"><a href="#cb52-7" aria-hidden="true" tabindex="-1"></a>  <span class="at">comparacion =</span> <span class="fu">c</span>(<span class="st">&quot;original&quot;</span>, <span class="st">&quot;multiplicar por positivo&quot;</span>, <span class="st">&quot;multiplicar por negativo&quot;</span>),</span>
+<span id="cb52-8"><a href="#cb52-8" aria-hidden="true" tabindex="-1"></a>  <span class="at">izquierda =</span> <span class="fu">c</span>(a, a <span class="sc">*</span> c_positivo, a <span class="sc">*</span> c_negativo),</span>
+<span id="cb52-9"><a href="#cb52-9" aria-hidden="true" tabindex="-1"></a>  <span class="at">derecha =</span> <span class="fu">c</span>(b, b <span class="sc">*</span> c_positivo, b <span class="sc">*</span> c_negativo),</span>
+<span id="cb52-10"><a href="#cb52-10" aria-hidden="true" tabindex="-1"></a>  <span class="at">menor =</span> <span class="fu">c</span>(a <span class="sc">&lt;</span> b,</span>
+<span id="cb52-11"><a href="#cb52-11" aria-hidden="true" tabindex="-1"></a>            a <span class="sc">*</span> c_positivo <span class="sc">&lt;</span> b <span class="sc">*</span> c_positivo,</span>
+<span id="cb52-12"><a href="#cb52-12" aria-hidden="true" tabindex="-1"></a>            a <span class="sc">*</span> c_negativo <span class="sc">&lt;</span> b <span class="sc">*</span> c_negativo)</span>
+<span id="cb52-13"><a href="#cb52-13" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div>
+<p>La tercera fila es falsa porque el sentido correcto es <span
+class="math inline">\(ac&gt;bc\)</span> cuando <span
+class="math inline">\(c&lt;0\)</span>.</p>
+<h3 class="unnumbered unlisted"
+id="densidad-mediante-puntos-intermedios">Densidad mediante puntos
+intermedios</h3>
+<p>Entre <span class="math inline">\(a&lt;b\)</span> podemos construir
+repetidamente puntos medios.</p>
+<div class="sourceCode" id="cb53"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb53-1"><a href="#cb53-1" aria-hidden="true" tabindex="-1"></a>puntos_medios <span class="ot">&lt;-</span> <span class="cf">function</span>(a, b, <span class="at">niveles =</span> <span class="dv">4</span><span class="dt">L</span>) {</span>
+<span id="cb53-2"><a href="#cb53-2" aria-hidden="true" tabindex="-1"></a>  puntos <span class="ot">&lt;-</span> <span class="fu">c</span>(a, b)</span>
+<span id="cb53-3"><a href="#cb53-3" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> (i <span class="cf">in</span> <span class="fu">seq_len</span>(niveles)) {</span>
+<span id="cb53-4"><a href="#cb53-4" aria-hidden="true" tabindex="-1"></a>    puntos <span class="ot">&lt;-</span> <span class="fu">sort</span>(<span class="fu">unique</span>(<span class="fu">c</span>(puntos, <span class="fu">head</span>(puntos, <span class="sc">-</span><span class="dv">1</span>) <span class="sc">+</span> <span class="fu">diff</span>(puntos) <span class="sc">/</span> <span class="dv">2</span>)))</span>
+<span id="cb53-5"><a href="#cb53-5" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb53-6"><a href="#cb53-6" aria-hidden="true" tabindex="-1"></a>  puntos</span>
+<span id="cb53-7"><a href="#cb53-7" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb53-8"><a href="#cb53-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-9"><a href="#cb53-9" aria-hidden="true" tabindex="-1"></a>p <span class="ot">&lt;-</span> <span class="fu">puntos_medios</span>(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">4</span><span class="dt">L</span>)</span>
+<span id="cb53-10"><a href="#cb53-10" aria-hidden="true" tabindex="-1"></a>p</span>
+<span id="cb53-11"><a href="#cb53-11" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(p, <span class="fu">rep</span>(<span class="dv">0</span>, <span class="fu">length</span>(p)), <span class="at">pch =</span> <span class="dv">19</span>,</span>
+<span id="cb53-12"><a href="#cb53-12" aria-hidden="true" tabindex="-1"></a>     <span class="at">xlab =</span> <span class="st">&quot;x&quot;</span>, <span class="at">ylab =</span> <span class="st">&quot;&quot;</span>, <span class="at">yaxt =</span> <span class="st">&quot;n&quot;</span>,</span>
+<span id="cb53-13"><a href="#cb53-13" aria-hidden="true" tabindex="-1"></a>     <span class="at">main =</span> <span class="st">&quot;Puntos intermedios entre 1 y 2&quot;</span>)</span>
+<span id="cb53-14"><a href="#cb53-14" aria-hidden="true" tabindex="-1"></a><span class="fu">abline</span>(<span class="at">h =</span> <span class="dv">0</span>, <span class="at">col =</span> <span class="st">&quot;gray50&quot;</span>)</span></code></pre></div>
+<h3 class="unnumbered unlisted"
+id="aproximar-sqrt2-por-bisección">Aproximar <span
+class="math inline">\(\sqrt2\)</span> por bisección</h3>
+<p>La completitud garantiza en <span class="math inline">\(\mathbb
+R\)</span> la existencia del límite que llena el corte entre números con
+cuadrado menor y mayor que <span class="math inline">\(2\)</span>.</p>
+<div class="sourceCode" id="cb54"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb54-1"><a href="#cb54-1" aria-hidden="true" tabindex="-1"></a>aproximar_raiz2 <span class="ot">&lt;-</span> <span class="cf">function</span>(<span class="at">iteraciones =</span> <span class="dv">20</span><span class="dt">L</span>) {</span>
+<span id="cb54-2"><a href="#cb54-2" aria-hidden="true" tabindex="-1"></a>  inferior <span class="ot">&lt;-</span> <span class="dv">1</span></span>
+<span id="cb54-3"><a href="#cb54-3" aria-hidden="true" tabindex="-1"></a>  superior <span class="ot">&lt;-</span> <span class="dv">2</span></span>
+<span id="cb54-4"><a href="#cb54-4" aria-hidden="true" tabindex="-1"></a>  historial <span class="ot">&lt;-</span> <span class="fu">data.frame</span>()</span>
+<span id="cb54-5"><a href="#cb54-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb54-6"><a href="#cb54-6" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> (i <span class="cf">in</span> <span class="fu">seq_len</span>(iteraciones)) {</span>
+<span id="cb54-7"><a href="#cb54-7" aria-hidden="true" tabindex="-1"></a>    medio <span class="ot">&lt;-</span> (inferior <span class="sc">+</span> superior) <span class="sc">/</span> <span class="dv">2</span></span>
+<span id="cb54-8"><a href="#cb54-8" aria-hidden="true" tabindex="-1"></a>    historial <span class="ot">&lt;-</span> <span class="fu">rbind</span>(</span>
+<span id="cb54-9"><a href="#cb54-9" aria-hidden="true" tabindex="-1"></a>      historial,</span>
+<span id="cb54-10"><a href="#cb54-10" aria-hidden="true" tabindex="-1"></a>      <span class="fu">data.frame</span>(<span class="at">i =</span> i, <span class="at">inferior =</span> inferior,</span>
+<span id="cb54-11"><a href="#cb54-11" aria-hidden="true" tabindex="-1"></a>                 <span class="at">medio =</span> medio, <span class="at">superior =</span> superior,</span>
+<span id="cb54-12"><a href="#cb54-12" aria-hidden="true" tabindex="-1"></a>                 <span class="at">error =</span> medio<span class="sc">^</span><span class="dv">2</span> <span class="sc">-</span> <span class="dv">2</span>)</span>
+<span id="cb54-13"><a href="#cb54-13" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb54-14"><a href="#cb54-14" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (medio<span class="sc">^</span><span class="dv">2</span> <span class="sc">&lt;</span> <span class="dv">2</span>) inferior <span class="ot">&lt;-</span> medio <span class="cf">else</span> superior <span class="ot">&lt;-</span> medio</span>
+<span id="cb54-15"><a href="#cb54-15" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb54-16"><a href="#cb54-16" aria-hidden="true" tabindex="-1"></a>  historial</span>
+<span id="cb54-17"><a href="#cb54-17" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb54-18"><a href="#cb54-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb54-19"><a href="#cb54-19" aria-hidden="true" tabindex="-1"></a>aproximacion <span class="ot">&lt;-</span> <span class="fu">aproximar_raiz2</span>(<span class="dv">15</span><span class="dt">L</span>)</span>
+<span id="cb54-20"><a href="#cb54-20" aria-hidden="true" tabindex="-1"></a><span class="fu">tail</span>(aproximacion, <span class="dv">5</span>)</span>
+<span id="cb54-21"><a href="#cb54-21" aria-hidden="true" tabindex="-1"></a><span class="fu">sqrt</span>(<span class="dv">2</span>)</span></code></pre></div>
+<h2 data-number="2.7" id="sec-exponentes"><span
+class="header-section-number">2.7</span> Exponentes racionales y
+negativos</h2>
+<h3 class="unnumbered unlisted" id="potencias-y-dominio">Potencias y
+dominio</h3>
+<div class="sourceCode" id="cb55"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb55-1"><a href="#cb55-1" aria-hidden="true" tabindex="-1"></a><span class="fu">data.frame</span>(</span>
+<span id="cb55-2"><a href="#cb55-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">expresion =</span> <span class="fu">c</span>(<span class="st">&quot;2^(-3)&quot;</span>, <span class="st">&quot;16^(3/4)&quot;</span>, <span class="st">&quot;(-8)^(1/3)&quot;</span>),</span>
+<span id="cb55-3"><a href="#cb55-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">valor_R =</span> <span class="fu">c</span>(<span class="dv">2</span><span class="sc">^</span>(<span class="sc">-</span><span class="dv">3</span>), <span class="dv">16</span><span class="sc">^</span>(<span class="dv">3</span><span class="sc">/</span><span class="dv">4</span>), (<span class="sc">-</span><span class="dv">8</span>)<span class="sc">^</span>(<span class="dv">1</span><span class="sc">/</span><span class="dv">3</span>))</span>
+<span id="cb55-4"><a href="#cb55-4" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div>
+<p>La última expresión muestra una dificultad: aunque la raíz cúbica
+real de <span class="math inline">\(-8\)</span> es <span
+class="math inline">\(-2\)</span>, la operación directa puede producir
+<code>NaN</code> porque R evalúa potencias reales mediante logaritmos
+complejos fuera del dominio real positivo.</p>
+<p>Podemos construir la raíz impar real:</p>
+<div class="sourceCode" id="cb56"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb56-1"><a href="#cb56-1" aria-hidden="true" tabindex="-1"></a>raiz_impar <span class="ot">&lt;-</span> <span class="cf">function</span>(x, n) {</span>
+<span id="cb56-2"><a href="#cb56-2" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (n <span class="sc">&lt;=</span> <span class="dv">0</span><span class="dt">L</span> <span class="sc">||</span> n <span class="sc">%%</span> <span class="dv">2</span><span class="dt">L</span> <span class="sc">==</span> <span class="dv">0</span><span class="dt">L</span>) <span class="fu">stop</span>(<span class="st">&quot;n debe ser impar positivo&quot;</span>)</span>
+<span id="cb56-3"><a href="#cb56-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">sign</span>(x) <span class="sc">*</span> <span class="fu">abs</span>(x)<span class="sc">^</span>(<span class="dv">1</span> <span class="sc">/</span> n)</span>
+<span id="cb56-4"><a href="#cb56-4" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb56-5"><a href="#cb56-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb56-6"><a href="#cb56-6" aria-hidden="true" tabindex="-1"></a><span class="fu">raiz_impar</span>(<span class="sc">-</span><span class="dv">8</span>, <span class="dv">3</span><span class="dt">L</span>)</span></code></pre></div>
+<h3 class="unnumbered unlisted"
+id="verificar-leyes-con-restricciones">Verificar leyes con
+restricciones</h3>
+<div class="sourceCode" id="cb57"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb57-1"><a href="#cb57-1" aria-hidden="true" tabindex="-1"></a>a <span class="ot">&lt;-</span> <span class="dv">5</span></span>
+<span id="cb57-2"><a href="#cb57-2" aria-hidden="true" tabindex="-1"></a>r <span class="ot">&lt;-</span> <span class="dv">2</span><span class="sc">/</span><span class="dv">3</span></span>
+<span id="cb57-3"><a href="#cb57-3" aria-hidden="true" tabindex="-1"></a>s <span class="ot">&lt;-</span> <span class="sc">-</span><span class="dv">1</span><span class="sc">/</span><span class="dv">4</span></span>
+<span id="cb57-4"><a href="#cb57-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb57-5"><a href="#cb57-5" aria-hidden="true" tabindex="-1"></a><span class="fu">c</span>(</span>
+<span id="cb57-6"><a href="#cb57-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">producto =</span> a<span class="sc">^</span>r <span class="sc">*</span> a<span class="sc">^</span>s,</span>
+<span id="cb57-7"><a href="#cb57-7" aria-hidden="true" tabindex="-1"></a>  <span class="at">suma_exponentes =</span> a<span class="sc">^</span>(r <span class="sc">+</span> s),</span>
+<span id="cb57-8"><a href="#cb57-8" aria-hidden="true" tabindex="-1"></a>  <span class="at">diferencia =</span> a<span class="sc">^</span>r <span class="sc">*</span> a<span class="sc">^</span>s <span class="sc">-</span> a<span class="sc">^</span>(r <span class="sc">+</span> s)</span>
+<span id="cb57-9"><a href="#cb57-9" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div>
+<p>Por redondeo, conviene comparar con <code>all.equal()</code>.</p>
+<div class="sourceCode" id="cb58"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb58-1"><a href="#cb58-1" aria-hidden="true" tabindex="-1"></a><span class="fu">all.equal</span>(a<span class="sc">^</span>r <span class="sc">*</span> a<span class="sc">^</span>s, a<span class="sc">^</span>(r <span class="sc">+</span> s))</span></code></pre></div>
+<h3 class="unnumbered unlisted" id="gráficas-de-potencias">Gráficas de
+potencias</h3>
+<div class="sourceCode" id="cb59"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb59-1"><a href="#cb59-1" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="fu">seq</span>(<span class="fl">0.05</span>, <span class="dv">4</span>, <span class="at">length.out =</span> <span class="dv">400</span>)</span>
+<span id="cb59-2"><a href="#cb59-2" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(x, x<span class="sc">^</span><span class="dv">2</span>, <span class="at">type =</span> <span class="st">&quot;l&quot;</span>, <span class="at">lwd =</span> <span class="dv">2</span>,</span>
+<span id="cb59-3"><a href="#cb59-3" aria-hidden="true" tabindex="-1"></a>     <span class="at">xlab =</span> <span class="st">&quot;x&quot;</span>, <span class="at">ylab =</span> <span class="st">&quot;y&quot;</span>, <span class="at">ylim =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">8</span>),</span>
+<span id="cb59-4"><a href="#cb59-4" aria-hidden="true" tabindex="-1"></a>     <span class="at">main =</span> <span class="st">&quot;Exponentes sobre bases positivas&quot;</span>)</span>
+<span id="cb59-5"><a href="#cb59-5" aria-hidden="true" tabindex="-1"></a><span class="fu">lines</span>(x, <span class="fu">sqrt</span>(x), <span class="at">lwd =</span> <span class="dv">2</span>, <span class="at">lty =</span> <span class="dv">2</span>)</span>
+<span id="cb59-6"><a href="#cb59-6" aria-hidden="true" tabindex="-1"></a><span class="fu">lines</span>(x, x<span class="sc">^</span>(<span class="sc">-</span><span class="dv">1</span>), <span class="at">lwd =</span> <span class="dv">2</span>, <span class="at">lty =</span> <span class="dv">3</span>)</span>
+<span id="cb59-7"><a href="#cb59-7" aria-hidden="true" tabindex="-1"></a><span class="fu">legend</span>(<span class="st">&quot;topright&quot;</span>, <span class="fu">c</span>(<span class="st">&quot;x^2&quot;</span>, <span class="st">&quot;x^(1/2)&quot;</span>, <span class="st">&quot;x^(-1)&quot;</span>),</span>
+<span id="cb59-8"><a href="#cb59-8" aria-hidden="true" tabindex="-1"></a>       <span class="at">lty =</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>), <span class="at">lwd =</span> <span class="dv">2</span>, <span class="at">bty =</span> <span class="st">&quot;n&quot;</span>)</span></code></pre></div>
+<h2 data-number="2.8" id="sec-valor-absoluto"><span
+class="header-section-number">2.8</span> Valor absoluto</h2>
+<h3 class="unnumbered unlisted" id="distancia-en-la-recta">Distancia en
+la recta</h3>
+<div class="sourceCode" id="cb60"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb60-1"><a href="#cb60-1" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="sc">-</span><span class="dv">5</span>, <span class="sc">-</span><span class="dv">2</span>, <span class="dv">0</span>, <span class="dv">3</span>, <span class="dv">7</span>)</span>
+<span id="cb60-2"><a href="#cb60-2" aria-hidden="true" tabindex="-1"></a>a <span class="ot">&lt;-</span> <span class="dv">2</span></span>
+<span id="cb60-3"><a href="#cb60-3" aria-hidden="true" tabindex="-1"></a><span class="fu">data.frame</span>(<span class="at">x =</span> x, <span class="at">centro =</span> a, <span class="at">distancia =</span> <span class="fu">abs</span>(x <span class="sc">-</span> a))</span></code></pre></div>
+<figure id="fig-valor-absoluto">
+<img src="figures/valor-absoluto.png" style="width:90.0%"
+alt="La desigualdad |x-a|\le r selecciona un intervalo centrado en a." />
+<figcaption aria-hidden="true">La desigualdad <span
+class="math inline">\(|x-a|\le r\)</span> selecciona un intervalo
+centrado en <span class="math inline">\(a\)</span>.</figcaption>
+</figure>
+<h3 class="unnumbered unlisted" id="resolver-inecuaciones">Resolver
+inecuaciones</h3>
+<p>Para resolver <span class="math inline">\(|x-a|\le r\)</span>, el
+intervalo solución es <span class="math inline">\([a-r,a+r]\)</span>
+cuando <span class="math inline">\(r\ge0\)</span>.</p>
+<div class="sourceCode" id="cb61"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb61-1"><a href="#cb61-1" aria-hidden="true" tabindex="-1"></a>intervalo_abs <span class="ot">&lt;-</span> <span class="cf">function</span>(a, r, <span class="at">tipo =</span> <span class="fu">c</span>(<span class="st">&quot;menor_igual&quot;</span>, <span class="st">&quot;mayor&quot;</span>)) {</span>
+<span id="cb61-2"><a href="#cb61-2" aria-hidden="true" tabindex="-1"></a>  tipo <span class="ot">&lt;-</span> <span class="fu">match.arg</span>(tipo)</span>
+<span id="cb61-3"><a href="#cb61-3" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (r <span class="sc">&lt;</span> <span class="dv">0</span>) <span class="fu">stop</span>(<span class="st">&quot;r debe ser no negativo&quot;</span>)</span>
+<span id="cb61-4"><a href="#cb61-4" aria-hidden="true" tabindex="-1"></a>  extremos <span class="ot">&lt;-</span> <span class="fu">c</span>(a <span class="sc">-</span> r, a <span class="sc">+</span> r)</span>
+<span id="cb61-5"><a href="#cb61-5" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (tipo <span class="sc">==</span> <span class="st">&quot;menor_igual&quot;</span>) {</span>
+<span id="cb61-6"><a href="#cb61-6" aria-hidden="true" tabindex="-1"></a>    <span class="fu">list</span>(<span class="at">intervalo =</span> extremos,</span>
+<span id="cb61-7"><a href="#cb61-7" aria-hidden="true" tabindex="-1"></a>         <span class="at">descripcion =</span> <span class="fu">sprintf</span>(<span class="st">&quot;[%g, %g]&quot;</span>, extremos[<span class="dv">1</span>], extremos[<span class="dv">2</span>]))</span>
+<span id="cb61-8"><a href="#cb61-8" aria-hidden="true" tabindex="-1"></a>  } <span class="cf">else</span> {</span>
+<span id="cb61-9"><a href="#cb61-9" aria-hidden="true" tabindex="-1"></a>    <span class="fu">list</span>(<span class="at">intervalos =</span> <span class="fu">matrix</span>(<span class="fu">c</span>(<span class="sc">-</span><span class="cn">Inf</span>, extremos[<span class="dv">1</span>], extremos[<span class="dv">2</span>], <span class="cn">Inf</span>), <span class="at">nrow =</span> <span class="dv">2</span>, <span class="at">byrow =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb61-10"><a href="#cb61-10" aria-hidden="true" tabindex="-1"></a>         <span class="at">descripcion =</span> <span class="fu">sprintf</span>(<span class="st">&quot;(-Inf, %g) U (%g, Inf)&quot;</span>, extremos[<span class="dv">1</span>], extremos[<span class="dv">2</span>]))</span>
+<span id="cb61-11"><a href="#cb61-11" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb61-12"><a href="#cb61-12" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb61-13"><a href="#cb61-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb61-14"><a href="#cb61-14" aria-hidden="true" tabindex="-1"></a><span class="fu">intervalo_abs</span>(<span class="at">a =</span> <span class="dv">4</span>, <span class="at">r =</span> <span class="dv">7</span>, <span class="at">tipo =</span> <span class="st">&quot;menor_igual&quot;</span>)</span>
+<span id="cb61-15"><a href="#cb61-15" aria-hidden="true" tabindex="-1"></a><span class="fu">intervalo_abs</span>(<span class="at">a =</span> <span class="sc">-</span><span class="dv">1</span>, <span class="at">r =</span> <span class="dv">2</span>, <span class="at">tipo =</span> <span class="st">&quot;mayor&quot;</span>)</span></code></pre></div>
+<h3 class="unnumbered unlisted"
+id="comprobar-la-desigualdad-triangular">Comprobar la desigualdad
+triangular</h3>
+<div class="sourceCode" id="cb62"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb62-1"><a href="#cb62-1" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">2026</span>)</span>
+<span id="cb62-2"><a href="#cb62-2" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="fu">runif</span>(<span class="dv">1000</span>, <span class="sc">-</span><span class="dv">20</span>, <span class="dv">20</span>)</span>
+<span id="cb62-3"><a href="#cb62-3" aria-hidden="true" tabindex="-1"></a>y <span class="ot">&lt;-</span> <span class="fu">runif</span>(<span class="dv">1000</span>, <span class="sc">-</span><span class="dv">20</span>, <span class="dv">20</span>)</span>
+<span id="cb62-4"><a href="#cb62-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb62-5"><a href="#cb62-5" aria-hidden="true" tabindex="-1"></a><span class="fu">all</span>(<span class="fu">abs</span>(x <span class="sc">+</span> y) <span class="sc">&lt;=</span> <span class="fu">abs</span>(x) <span class="sc">+</span> <span class="fu">abs</span>(y) <span class="sc">+</span> <span class="fl">1e-12</span>)</span>
+<span id="cb62-6"><a href="#cb62-6" aria-hidden="true" tabindex="-1"></a><span class="fu">max</span>(<span class="fu">abs</span>(x <span class="sc">+</span> y) <span class="sc">-</span> (<span class="fu">abs</span>(x) <span class="sc">+</span> <span class="fu">abs</span>(y)))</span></code></pre></div>
+<p>La simulación busca contraejemplos en mil pares. No sustituye la
+demostración, pero ayuda a comprobar la implementación y a observar que
+la diferencia nunca resulta positiva.</p>
+<h3 class="unnumbered unlisted"
+id="interactivo-centro-radio-e-intervalo">Interactivo: centro, radio e
+intervalo</h3>
+<p>Cambie el centro <span class="math inline">\(a\)</span>, el radio
+<span class="math inline">\(r\)</span> y el tipo de desigualdad. La
+recta numérica muestra si la solución es un intervalo central o dos
+regiones exteriores.</p>
+<p><a href="interactivos/valor-absoluto.html" class="btn btn-primary"
+target="_blank">Abrir el laboratorio de valor absoluto</a></p>
+<div class="content-visible" data-when-format="html">
+<iframe class="interactive-frame absolute" src="interactivos/valor-absoluto.html" title="Laboratorio interactivo de valor absoluto" loading="lazy">
+</iframe>
+</div>
+<h2 class="unnumbered unlisted"
+id="laboratorio-del-capítulo-1">Laboratorio del capítulo</h2>
+<p>La versión incorpora tres actividades autónomas:</p>
+<ol type="1">
+<li><strong>Inducción visual:</strong> construye <span
+class="math inline">\((n+1)^2\)</span> a partir de <span
+class="math inline">\(n^2\)</span> y <span
+class="math inline">\(2n+1\)</span>.</li>
+<li><strong>Algoritmo de Euclides:</strong> presenta cocientes y
+residuos hasta encontrar el MCD.</li>
+<li><strong>Valor absoluto:</strong> transforma distancia en intervalos
+y regiones de la recta real.</li>
+</ol>
+<p>Estas actividades funcionan en el sitio estático. El cuaderno Colab
+reúne además todos los algoritmos y experimentos de R.</p>
+<h2 class="unnumbered unlisted" id="ejercicios-con-r-1">Ejercicios con
+R</h2>
+<ol type="1">
+<li>Genere enteros aleatorios y compruebe las propiedades conmutativa,
+asociativa y distributiva.</li>
+<li>Construya una tabla para contrastar <span
+class="math inline">\(1+2+\cdots+n\)</span> con <span
+class="math inline">\(n(n+1)/2\)</span> hasta <span
+class="math inline">\(n=100\)</span>.</li>
+<li>Modifique <code>euclides()</code> para aceptar una lista de enteros
+y calcular su MCD.</li>
+<li>Use <code>euclides_extendido()</code> para resolver una ecuación
+diofántica <span class="math inline">\(ax+by=c\)</span>.</li>
+<li>Compare el tiempo de <code>es_primo()</code> y <code>criba()</code>
+al buscar primos hasta un límite creciente.</li>
+<li>Escriba una función que devuelva la factorización como texto, por
+ejemplo <code>2^2 * 3^3 * 7</code>.</li>
+<li>Genere aproximaciones racionales de <span
+class="math inline">\(\sqrt2\)</span> y grafique el error absoluto.</li>
+<li>Construya ejemplos donde comparar con <code>==</code> falle, pero
+<code>all.equal()</code> sea verdadero.</li>
+<li>Trace <span class="math inline">\(x^r\)</span> para exponentes
+negativos, fraccionarios y enteros en sus dominios reales.</li>
+<li>Genere puntos al azar y compruebe la desigualdad triangular
+inversa.</li>
+</ol>
+<h2 class="unnumbered unlisted" id="proyecto-integrador-1">Proyecto
+integrador</h2>
+<p>Desarrolle un pequeño analizador de enteros que reciba <span
+class="math inline">\(a\)</span> y <span
+class="math inline">\(b\)</span> y produzca:</p>
+<ol type="1">
+<li>clasificación de signo y paridad;</li>
+<li>divisores positivos;</li>
+<li>factorización prima;</li>
+<li>tabla completa del algoritmo de Euclides;</li>
+<li>coeficientes de Bézout;</li>
+<li>MCD y MCM calculados de dos maneras;</li>
+<li>verificaciones automáticas de las identidades utilizadas;</li>
+<li>una interpretación escrita de los resultados.</li>
+</ol>
+<p>El informe debe distinguir con claridad qué resultados son cálculos,
+cuáles son verificaciones finitas y cuáles dependen de un teorema
+general.</p>
+<h2 class="unnumbered unlisted" id="síntesis-1">Síntesis</h2>
+<p>R hace visibles los algoritmos y permite experimentar con numerosos
+ejemplos. El residuo implementa divisibilidad; Euclides reduce el
+problema del MCD; la criba y las divisiones sucesivas exploran primos;
+las aproximaciones muestran la diferencia entre un real matemático y su
+representación finita. La inducción, la unicidad de la factorización y
+las propiedades de completitud siguen requiriendo razonamiento
+matemático.</p>
+<h2 class="unnumbered unlisted"
+id="referencias-del-capítulo-1">Referencias del capítulo</h2>
+<p>La secuencia sigue la unidad 2 del programa de Álgebra Superior <span
+class="citation" data-cites="uaslp2011">(Universidad Autónoma de San
+Luis Potosí, Facultad de Ciencias 2011)</span>. Los fundamentos se
+apoyan en <span class="citation" data-cites="silvaLazo2007">Silva y Lazo
+(2007)</span>, <span class="citation" data-cites="rosen2019">Rosen
+(2019)</span>, <span class="citation" data-cites="burton2011">Burton
+(2011)</span> y <span class="citation" data-cites="niven1991">Niven,
+Zuckerman, y Montgomery (1991)</span>. Los algoritmos se implementan con
+R base <span class="citation" data-cites="rCore2026">(R Core Team
+2026)</span>.</p>
+<h1 class="unnumbered" id="índices-de-consulta">Índices de consulta</h1>
+<p>Los índices permiten localizar conceptos, código, figuras y
+laboratorios sin aumentar la numeración principal del libro.</p>
+<h2 class="unnumbered" id="índice-temático">Índice temático</h2>
+<table>
+<caption>Índice alfabético de conceptos, código y laboratorios.
+</caption>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Término o recurso</th>
+<th>Sección principal</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Algoritmo de Euclides</strong></td>
+<td><a href="#sec-divisibilidad">2.3 Divisibilidad</a></td>
+</tr>
+<tr class="even">
+<td><strong>Aritmética de punto flotante</strong></td>
+<td><a href="#sec-racionales-reales">2.5 Racionales y reales</a></td>
+</tr>
+<tr class="odd">
+<td><strong>Bézout, coeficientes de</strong></td>
+<td><a href="#sec-divisibilidad">2.3 Divisibilidad</a></td>
+</tr>
+<tr class="even">
+<td><strong>Cardinalidad</strong></td>
+<td><a href="#sec-cardinalidad-finita">1.5 Conjuntos finitos</a> y <a
+href="#sec-cardinalidad-infinita">1.9 Conjuntos infinitos</a></td>
+</tr>
+<tr class="odd">
+<td><strong>Circuitos lógicos</strong></td>
+<td>aplicación integradora del capítulo 1</td>
+</tr>
+<tr class="even">
+<td><strong>Completitud</strong></td>
+<td><a href="#sec-propiedades-reales">2.6 Propiedades de los
+reales</a></td>
+</tr>
+<tr class="odd">
+<td><strong>Conjunto potencia</strong></td>
+<td><a href="#sec-lenguaje-conjuntos">1.1 Lenguaje de conjuntos</a></td>
+</tr>
+<tr class="even">
+<td><strong>Cuantificadores en dominios finitos</strong></td>
+<td><a href="#sec-cuantificadores">1.3 Cuantificadores</a></td>
+</tr>
+<tr class="odd">
+<td><strong>Densidad</strong></td>
+<td><a href="#sec-propiedades-reales">2.6 Propiedades de los
+reales</a></td>
+</tr>
+<tr class="even">
+<td><strong>Divisibilidad</strong></td>
+<td><a href="#sec-divisibilidad">2.3 Divisibilidad</a></td>
+</tr>
+<tr class="odd">
+<td><strong>Exponentes</strong></td>
+<td><a href="#sec-exponentes">2.7 Exponentes</a></td>
+</tr>
+<tr class="even">
+<td><strong>Factorización prima</strong></td>
+<td><a href="#sec-primos-factorizacion">2.4 Primos y
+factorización</a></td>
+</tr>
+<tr class="odd">
+<td><strong>Funciones en R</strong></td>
+<td><a href="#sec-funciones">1.7 Funciones</a></td>
+</tr>
+<tr class="even">
+<td><strong>Inducción y verificación</strong></td>
+<td><a href="#sec-induccion">2.2 Inducción</a></td>
+</tr>
+<tr class="odd">
+<td><strong>Interactivo de Euclides</strong></td>
+<td><a href="#sec-divisibilidad">2.3 Divisibilidad</a></td>
+</tr>
+<tr class="even">
+<td><strong>Interactivo de funciones</strong></td>
+<td><a href="#sec-tipos-funciones">1.8 Tipos de funciones</a></td>
+</tr>
+<tr class="odd">
+<td><strong>Interactivo de inducción</strong></td>
+<td><a href="#sec-induccion">2.2 Inducción</a></td>
+</tr>
+<tr class="even">
+<td><strong>Interactivo de tablas de verdad</strong></td>
+<td><a href="#sec-proposiciones">1.2 Proposiciones</a></td>
+</tr>
+<tr class="odd">
+<td><strong>Interactivo de valor absoluto</strong></td>
+<td><a href="#sec-valor-absoluto">2.8 Valor absoluto</a></td>
+</tr>
+<tr class="even">
+<td><strong>Interactivo de Venn</strong></td>
+<td><a href="#sec-operaciones-conjuntos">1.4 Operaciones de
+conjuntos</a></td>
+</tr>
+<tr class="odd">
+<td><strong>Máximo común divisor</strong></td>
+<td><a href="#sec-divisibilidad">2.3 Divisibilidad</a></td>
+</tr>
+<tr class="even">
+<td><strong>Mínimo común múltiplo</strong></td>
+<td><a href="#sec-primos-factorizacion">2.4 Primos y
+factorización</a></td>
+</tr>
+<tr class="odd">
+<td><strong>Números primos</strong></td>
+<td><a href="#sec-primos-factorizacion">2.4 Primos y
+factorización</a></td>
+</tr>
+<tr class="even">
+<td><strong>Operaciones con conjuntos en R</strong></td>
+<td><a href="#sec-operaciones-conjuntos">1.4 Operaciones de
+conjuntos</a></td>
+</tr>
+<tr class="odd">
+<td><strong>Racionales exactos y aproximados</strong></td>
+<td><a href="#sec-racionales-reales">2.5 Racionales y reales</a></td>
+</tr>
+<tr class="even">
+<td><strong>Relaciones en R</strong></td>
+<td><a href="#sec-producto-relaciones">1.6 Producto y
+relaciones</a></td>
+</tr>
+<tr class="odd">
+<td><strong>Valor absoluto</strong></td>
+<td><a href="#sec-valor-absoluto">2.8 Valor absoluto</a></td>
+</tr>
+</tbody>
+</table>
+<h2 class="unnumbered" id="índice-de-funciones-y-operadores-de-r">Índice
+de funciones y operadores de R</h2>
+<table>
+<caption>Funciones y operadores principales de R. </caption>
+<colgroup>
+<col style="width: 40%" />
+<col style="width: 30%" />
+<col style="width: 30%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: right;">Función u operador</th>
+<th>Uso matemático</th>
+<th>Sección</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;"><code>%in%</code></td>
+<td>pertenencia</td>
+<td>1.1</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"><code>union()</code>,
+<code>intersect()</code>, <code>setdiff()</code></td>
+<td>operaciones de conjuntos</td>
+<td>1.4</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"><code>expand.grid()</code></td>
+<td>tablas de verdad y productos cartesianos</td>
+<td>1.2 y 1.6</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"><code>all()</code>,
+<code>any()</code></td>
+<td>cuantificadores en dominios finitos</td>
+<td>1.3</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"><code>%/%</code>, <code>%%</code></td>
+<td>cociente y residuo</td>
+<td>2.3</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"><code>euclides()</code></td>
+<td>máximo común divisor</td>
+<td>2.3</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"><code>euclides_extendido()</code></td>
+<td>identidad de Bézout</td>
+<td>2.3</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"><code>es_primo()</code></td>
+<td>prueba de primalidad</td>
+<td>2.4</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"><code>criba()</code></td>
+<td>primos hasta un límite</td>
+<td>2.4</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"><code>factorizar()</code></td>
+<td>factores primos</td>
+<td>2.4</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"><code>all.equal()</code></td>
+<td>comparación numérica aproximada</td>
+<td>2.5 y 2.7</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"><code>abs()</code></td>
+<td>valor absoluto y distancia</td>
+<td>2.8</td>
+</tr>
+</tbody>
+</table>
+<h2 class="unnumbered" id="índice-de-símbolos">Índice de símbolos</h2>
+<table>
+<caption>Símbolos matemáticos principales. </caption>
+<colgroup>
+<col style="width: 40%" />
+<col style="width: 30%" />
+<col style="width: 30%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: right;">Símbolo</th>
+<th>Significado</th>
+<th>Sección</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;"><span class="math inline">\(x\in
+A\)</span>, <span class="math inline">\(A\subseteq B\)</span></td>
+<td>pertenencia e inclusión</td>
+<td>1.1</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"><span
+class="math inline">\(\neg,\land,\lor\)</span></td>
+<td>conectivos lógicos</td>
+<td>1.2</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"><span
+class="math inline">\(\forall,\exists\)</span></td>
+<td>cuantificadores</td>
+<td>1.3</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"><span class="math inline">\(A\cup B,A\cap
+B,A^c\)</span></td>
+<td>operaciones de conjuntos</td>
+<td>1.4</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"><span class="math inline">\(f:A\to
+B\)</span></td>
+<td>función</td>
+<td>1.7</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"><span class="math inline">\(\mathbb
+N,\mathbb Z,\mathbb Q,\mathbb R\)</span></td>
+<td>sistemas numéricos</td>
+<td>2.1 y 2.5</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"><span class="math inline">\(a\mid
+b\)</span></td>
+<td>divisibilidad</td>
+<td>2.3</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"><span
+class="math inline">\(\gcd(a,b)\)</span></td>
+<td>máximo común divisor</td>
+<td>2.3</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"><span
+class="math inline">\(\operatorname{mcm}(a,b)\)</span></td>
+<td>mínimo común múltiplo</td>
+<td>2.4</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"><span
+class="math inline">\(|x-a|\)</span></td>
+<td>distancia entre <span class="math inline">\(x\)</span> y <span
+class="math inline">\(a\)</span></td>
+<td>2.8</td>
+</tr>
+</tbody>
+</table>
+<h2 class="unnumbered" id="índice-de-figuras">Índice de figuras</h2>
+<h3 class="unnumbered" id="capítulo-1">Capítulo 1</h3>
+<ol type="1">
+<li>Operaciones y regiones de Venn (sección 1.4).</li>
+<li>Relación, función y no-función (sección 1.7).</li>
+<li>Composición de funciones (sección 1.7).</li>
+<li>Funciones inyectivas, suprayectivas y biyectivas (sección 1.8).</li>
+</ol>
+<h3 class="unnumbered" id="capítulo-2">Capítulo 2</h3>
+<ol type="1">
+<li>Suma de impares y cuadrados perfectos (sección 2.2).</li>
+<li>Residuos del algoritmo de Euclides (sección 2.3).</li>
+<li>Cadena de factorización de <span class="math inline">\(756\)</span>
+(sección 2.4).</li>
+<li>Jerarquía de los sistemas numéricos (sección 2.5).</li>
+<li>Valor absoluto como distancia (sección 2.8).</li>
+</ol>
+<h2 class="unnumbered" id="índice-de-laboratorios">Índice de
+laboratorios</h2>
+<table>
+<caption>Laboratorios interactivos incorporados. </caption>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Laboratorio</th>
+<th>Concepto</th>
+<th>Sección</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Tablas de verdad</td>
+<td>conectivos y clasificación</td>
+<td>1.2</td>
+</tr>
+<tr class="even">
+<td>Operaciones de Venn</td>
+<td>unión, intersección y complemento</td>
+<td>1.4</td>
+</tr>
+<tr class="odd">
+<td>Clasificador de funciones</td>
+<td>inyectividad, suprayectividad y biyección</td>
+<td>1.8</td>
+</tr>
+<tr class="even">
+<td>Inducción visual</td>
+<td>suma de impares</td>
+<td>2.2</td>
+</tr>
+<tr class="odd">
+<td>Algoritmo de Euclides</td>
+<td>cocientes, residuos y MCD</td>
+<td>2.3</td>
+</tr>
+<tr class="even">
+<td>Valor absoluto</td>
+<td>distancia e intervalos</td>
+<td>2.8</td>
+</tr>
+</tbody>
+</table>
+<h1 class="unnumbered" id="referencias-generales">Referencias
+generales</h1>
+<p>Las fuentes de ambos capítulos se reúnen aquí en una lista única. Las
+notas bibliográficas al final de cada capítulo indican cuáles sustentan
+cada bloque temático.</p>
 <div id="refs" class="references csl-bib-body hanging-indent"
 role="list">
+<div id="ref-burton2011" class="csl-entry" role="listitem">
+Burton, David M. 2011. <em>Elementary Number Theory</em>. 7a ed.
+McGraw-Hill.
+</div>
 <div id="ref-epp2011" class="csl-entry" role="listitem">
 Epp, Susanna S. 2011. <em>Discrete Mathematics with Applications</em>.
-4th ed. Brooks/Cole, Cengage Learning.
+4a ed. Brooks/Cole, Cengage Learning.
+</div>
+<div id="ref-niven1991" class="csl-entry" role="listitem">
+Niven, Ivan, Herbert S. Zuckerman, y Hugh L. Montgomery. 1991. <em>An
+Introduction to the Theory of Numbers</em>. 5a ed. John Wiley &amp;
+Sons.
 </div>
 <div id="ref-rCore2026" class="csl-entry" role="listitem">
 R Core Team. 2026. <em>R: A Language and Environment for Statistical
@@ -1188,21 +2166,21 @@ Computing</em>. Vienna, Austria: R Foundation for Statistical Computing.
 </div>
 <div id="ref-rosen2019" class="csl-entry" role="listitem">
 Rosen, Kenneth H. 2019. <em>Discrete Mathematics and Its
-Applications</em>. 8th ed. McGraw-Hill Education.
+Applications</em>. 8a ed. McGraw-Hill Education.
 </div>
 <div id="ref-silvaLazo2007" class="csl-entry" role="listitem">
-Silva, Juan Manuel, and Adriana Lazo. 2007. <em>Fundamentos de
+Silva, Juan Manuel, y Adriana Lazo. 2007. <em>Fundamentos de
 Matemáticas: Álgebra, Trigonometría, Geometría Analítica y Cálculo</em>.
-7th ed. México: Limusa.
+7a ed. México: Limusa.
 </div>
 <div id="ref-tocci2003" class="csl-entry" role="listitem">
-Tocci, Ronald J., and Neal S. Widmer. 2003. <em>Sistemas Digitales:
-Principios y Aplicaciones</em>. 8th ed. México: Pearson Educación.
+Tocci, Ronald J., y Neal S. Widmer. 2003. <em>Sistemas digitales:
+principios y aplicaciones</em>. 8a ed. México: Pearson Educación.
 </div>
 <div id="ref-uaslp2011" class="csl-entry" role="listitem">
 Universidad Autónoma de San Luis Potosí, Facultad de Ciencias. 2011.
-<span>“Programa Sintético de Álgebra Superior, Carrera de Ingeniero
-Electrónico.”</span> Propuesta de modificación curricular.
+<span>“Programa sintético de Álgebra Superior, carrera de Ingeniero
+Electrónico”</span>. Propuesta de modificación curricular.
 </div>
 </div>
 </body>

@@ -24,7 +24,7 @@ cells = [
 # Capítulo 1. Lógica y conjuntos con R
 
 **Álgebra Superior con aplicaciones en R y GeoGebra**  
-**Autor:** MI Jesús Gilberto Rodríguez Escobedo
+**Autor:** Jesús Gilberto Rodríguez Escobedo
 
 [Abrir este cuaderno en Google Colab](https://colab.research.google.com/github/gilbertorodriguez59/libro-algebra-superior-r-geogebra-dev/blob/main/notebooks/capitulo-01-logica-conjuntos-R.ipynb)
 

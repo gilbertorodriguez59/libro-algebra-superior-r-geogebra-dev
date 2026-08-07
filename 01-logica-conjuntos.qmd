@@ -2,7 +2,7 @@
 
 *Experimentación con R, GeoGebra y circuitos*
 
-## Introducción {.unnumbered}
+## Introducción {.unnumbered .unlisted}
 
 Este capítulo transforma los conceptos de lógica y conjuntos en objetos que pueden calcularse, visualizarse y comprobarse. Cada bloque parte de una idea matemática, la resuelve manualmente y después utiliza R como laboratorio. GeoGebra se reservará para las representaciones dinámicas y Shiny para actividades en las que el estudiante modifique datos y reciba retroalimentación.
 
@@ -14,7 +14,7 @@ El cuaderno reúne las nueve secciones, las aplicaciones a sistemas digitales, v
 [Abrir en Google Colab](https://colab.research.google.com/github/gilbertorodriguez59/libro-algebra-superior-r-geogebra-dev/blob/main/notebooks/capitulo-01-logica-conjuntos-R.ipynb){.btn .btn-primary target="_blank"} [Descargar el cuaderno](notebooks/capitulo-01-logica-conjuntos-R.ipynb){.btn target="_blank"}
 :::
 
-### Objetivos {.unnumbered}
+### Objetivos {.unnumbered .unlisted}
 
 Al finalizar, el lector podrá:
 
@@ -28,9 +28,9 @@ Al finalizar, el lector podrá:
 - experimentar con correspondencias biyectivas;
 - comprobar simplificaciones booleanas y diseñar circuitos.
 
-## Lenguaje de conjuntos
+## Lenguaje de conjuntos {#sec-lenguaje-conjuntos}
 
-### Situación inicial {.unnumbered}
+### Situación inicial {.unnumbered .unlisted}
 
 Consideremos el universo
 
@@ -83,7 +83,7 @@ identical(c(1, 2, 3), c(3, 2, 1))
 
 La función **setequal()** devuelve verdadero, mientras que **identical()** devuelve falso, porque esta última compara vectores ordenados, no conjuntos.
 
-### Conjunto potencia {.unnumbered}
+### Conjunto potencia {.unnumbered .unlisted}
 
 El siguiente código genera todos los subconjuntos de un conjunto finito:
 
@@ -112,9 +112,9 @@ El resultado contiene $2^3=8$ subconjuntos, incluido el conjunto vacío.
 Se construirá una mesa dinámica con los ocho subconjuntos de $\{a,b,c\}$. El estudiante podrá seleccionar dos subconjuntos y observar su unión, intersección y diferencia simétrica. El enlace se incorporará cuando la actividad esté publicada.
 :::
 
-## Proposiciones y conectivos lógicos
+## Proposiciones y conectivos lógicos {#sec-proposiciones}
 
-### Construcción de una tabla de verdad {.unnumbered}
+### Construcción de una tabla de verdad {.unnumbered .unlisted}
 
 R representa verdadero y falso mediante **TRUE** y **FALSE**. Las combinaciones para dos proposiciones se generan así:
 
@@ -143,7 +143,7 @@ $$
 p\Rightarrow q\equiv\neg p\lor q.
 $$
 
-### Tautologías, contradicciones y contingencias {.unnumbered}
+### Tautologías, contradicciones y contingencias {.unnumbered .unlisted}
 
 Una expresión es tautología si todas sus filas son verdaderas:
 
@@ -184,7 +184,7 @@ all(izquierda == derecha)
 
 La última instrucción devuelve verdadero; la equivalencia se cumple en todas las filas.
 
-### Interactivo: tabla de verdad {.unnumbered}
+### Interactivo: tabla de verdad {.unnumbered .unlisted}
 
 Cambie la expresión y los valores de entrada. La fila activa se señala en la tabla y la salida se actualiza inmediatamente.
 
@@ -194,9 +194,9 @@ Cambie la expresión y los valores de entrada. La fila activa se señala en la t
 <iframe class="interactive-frame truth" src="interactivos/tablas-verdad.html" title="Laboratorio interactivo de tablas de verdad" loading="lazy"></iframe>
 :::
 
-## Cuantificadores y equivalencias lógicas
+## Cuantificadores y equivalencias lógicas {#sec-cuantificadores}
 
-### Proposiciones abiertas sobre dominios finitos {.unnumbered}
+### Proposiciones abiertas sobre dominios finitos {.unnumbered .unlisted}
 
 Sea
 
@@ -227,7 +227,7 @@ any(D^2 == 4)  # existe x en D tal que x^2 = 4
 Verificar una propiedad en muchos valores no demuestra que se cumpla para todos los números reales. R sí puede decidir un cuantificador sobre un dominio finito completamente enumerado. Para dominios infinitos, la demostración matemática sigue siendo indispensable.
 :::
 
-### Negación de cuantificadores {.unnumbered}
+### Negación de cuantificadores {.unnumbered .unlisted}
 
 La equivalencia
 
@@ -248,9 +248,9 @@ c(lado_izquierdo, lado_derecho)
 
 No estamos sustituyendo una demostración formal; estamos observando la equivalencia en el dominio elegido.
 
-## Operaciones y propiedades de los conjuntos
+## Operaciones y propiedades de los conjuntos {#sec-operaciones-conjuntos}
 
-### Operaciones en R {.unnumbered}
+### Operaciones en R {.unnumbered .unlisted}
 
 R incluye funciones directas para unión, intersección y diferencia.
 
@@ -287,7 +287,7 @@ diferencia_simetrica(A, B)
 
 ![Cuatro operaciones representadas mediante regiones de Venn: unión, intersección, complemento y diferencia simétrica.](figures/venn-operaciones.png){#fig-venn-aplicado width=96%}
 
-### Interactivo: operaciones de conjuntos {.unnumbered}
+### Interactivo: operaciones de conjuntos {.unnumbered .unlisted}
 
 Seleccione una operación y modifique los elementos de $A$ y $B$. El laboratorio calcula el conjunto resultante, su cardinalidad y la región correspondiente.
 
@@ -297,7 +297,7 @@ Seleccione una operación y modifique los elementos de $A$ y $B$. El laboratorio
 <iframe class="interactive-frame" src="interactivos/operaciones-conjuntos.html" title="Laboratorio interactivo de operaciones con conjuntos" loading="lazy"></iframe>
 :::
 
-### Comprobación de las leyes de De Morgan {.unnumbered}
+### Comprobación de las leyes de De Morgan {.unnumbered .unlisted}
 
 Para los conjuntos concretos $A,B\subseteq U$, comprobamos
 
@@ -321,9 +321,9 @@ setequal(lado_izquierdo, lado_derecho)
 El laboratorio permite anticipar que $(A\cup B)^c$ y $A^c\cap B^c$ sombrean la misma región. La comprobación con R verifica el universo finito elegido; la demostración general se realiza mediante pertenencia.
 :::
 
-## Cardinalidad de conjuntos finitos y problemas de conteo
+## Cardinalidad de conjuntos finitos y problemas de conteo {#sec-cardinalidad-finita}
 
-### Inclusión-exclusión con dos conjuntos {.unnumbered}
+### Inclusión-exclusión con dos conjuntos {.unnumbered .unlisted}
 
 En un grupo de $180$ estudiantes, $95$ usan R, $80$ usan Python y $40$ utilizan ambos lenguajes.
 
@@ -339,7 +339,7 @@ n_ninguno <- total - n_al_menos_uno
 c(al_menos_uno = n_al_menos_uno, ninguno = n_ninguno)
 ~~~
 
-### Inclusión-exclusión con tres conjuntos {.unnumbered}
+### Inclusión-exclusión con tres conjuntos {.unnumbered .unlisted}
 
 ~~~{r}
 inclusion_exclusion_3 <- function(nA, nB, nC,
@@ -358,13 +358,13 @@ ningun_sensor <- total_dispositivos - al_menos_un_sensor
 c(al_menos_un_sensor, ningun_sensor)
 ~~~
 
-### Interpretación {.unnumbered}
+### Interpretación {.unnumbered .unlisted}
 
 R no decide qué significa cada intersección. El lector debe identificar si los datos de dos conjuntos incluyen o excluyen la intersección triple. El código ejecuta correctamente una fórmula solo cuando la modelación es correcta.
 
-## Producto cartesiano y relaciones
+## Producto cartesiano y relaciones {#sec-producto-relaciones}
 
-### Producto cartesiano como tabla {.unnumbered}
+### Producto cartesiano como tabla {.unnumbered .unlisted}
 
 Sean $A=\{1,2\}$ y $B=\{x,y,z\}$. El producto $A\times B$ se genera con **expand.grid()**:
 
@@ -379,7 +379,7 @@ nrow(AxB)
 
 El número de filas confirma $|A\times B|=|A||B|=6$.
 
-### Comprobación de una identidad {.unnumbered}
+### Comprobación de una identidad {.unnumbered .unlisted}
 
 Verifiquemos
 
@@ -410,7 +410,7 @@ derecha <- union(
 setequal(izquierda, derecha)
 ~~~
 
-### Propiedades de una relación finita {.unnumbered}
+### Propiedades de una relación finita {.unnumbered .unlisted}
 
 Representemos una relación mediante dos columnas:
 
@@ -469,9 +469,9 @@ c(
 El programa comprueba una relación finita completamente especificada. La razón matemática de cada propiedad sigue siendo la definición; el código automatiza la revisión de los pares.
 :::
 
-## Funciones: definición, representación y operaciones
+## Funciones: definición, representación y operaciones {#sec-funciones}
 
-### Una función como tabla {.unnumbered}
+### Una función como tabla {.unnumbered .unlisted}
 
 Sobre conjuntos finitos, una función puede representarse por una tabla de entradas y salidas.
 
@@ -505,7 +505,7 @@ es_funcion <- function(tabla, dominio, codominio) {
 es_funcion(f_tabla, dominio, codominio)
 ~~~
 
-### Funciones dadas por fórmulas {.unnumbered}
+### Funciones dadas por fórmulas {.unnumbered .unlisted}
 
 ~~~{r}
 f <- function(x) 2 * x + 1
@@ -530,9 +530,9 @@ Las columnas no coinciden: en general $g\circ f\ne f\circ g$.
 Se mostrarán simultáneamente las gráficas de $f$, $g$, $g\circ f$ y $f\circ g$. Un deslizador permitirá seguir un valor $x$ desde el dominio, pasar por la salida de la primera función y llegar a la composición.
 :::
 
-## Funciones inyectivas, suprayectivas y biyectivas
+## Funciones inyectivas, suprayectivas y biyectivas {#sec-tipos-funciones}
 
-### Clasificación automática de funciones finitas {.unnumbered}
+### Clasificación automática de funciones finitas {.unnumbered .unlisted}
 
 ~~~{r}
 clasificar_funcion <- function(tabla, dominio, codominio) {
@@ -574,7 +574,7 @@ No es inyectiva porque dos entradas producen “bajo”, y no es suprayectiva po
 
 ![La inyectividad evita imágenes repetidas; la suprayectividad exige cubrir todo el codominio; la biyección cumple ambas condiciones.](figures/tipos-funciones.png){#fig-tipos-funciones-aplicado width=98%}
 
-### Interactivo: clasificador de funciones {.unnumbered}
+### Interactivo: clasificador de funciones {.unnumbered .unlisted}
 
 Modifique las tres imágenes, deje alguna entrada sin imagen o asigne dos imágenes al elemento $1$. El diagnóstico distingue la definición de función de las propiedades de inyectividad, suprayectividad y biyección.
 
@@ -584,9 +584,9 @@ Modifique las tres imágenes, deje alguna entrada sin imagen o asigne dos imáge
 <iframe class="interactive-frame functions" src="interactivos/clasificador-funciones.html" title="Clasificador interactivo de funciones finitas" loading="lazy"></iframe>
 :::
 
-## Cardinalidad, equipotencia y conjuntos infinitos
+## Cardinalidad, equipotencia y conjuntos infinitos {#sec-cardinalidad-infinita}
 
-### Una biyección entre $\mathbb N_0$ y $\mathbb Z$ {.unnumbered}
+### Una biyección entre $\mathbb N_0$ y $\mathbb Z$ {.unnumbered .unlisted}
 
 Definimos
 
@@ -624,11 +624,11 @@ y muestra cómo los enteros pueden enumerarse mediante los naturales.
 La tabla solo muestra los primeros valores. La biyección se justifica demostrando que cada entero aparece exactamente una vez; observar muchos casos sirve para comprender el patrón, no para sustituir la prueba.
 :::
 
-## Aplicación integradora: álgebra de Boole y circuitos {.unnumbered}
+## Aplicación integradora: álgebra de Boole y circuitos {.unnumbered .unlisted}
 
 La secuencia práctica adapta el capítulo 3 de @tocci2003: variables booleanas, tablas de verdad, compuertas OR, AND y NOT, traducción entre circuitos y expresiones, evaluación de salidas, NAND/NOR, De Morgan, universalidad y diagramas de temporización.
 
-### Compuertas básicas en R {.unnumbered}
+### Compuertas básicas en R {.unnumbered .unlisted}
 
 ~~~{r}
 NOT <- function(a) !a
@@ -651,7 +651,7 @@ data.frame(
 )
 ~~~
 
-### De circuito a expresión y de expresión a circuito {.unnumbered}
+### De circuito a expresión y de expresión a circuito {.unnumbered .unlisted}
 
 Para analizar un diagrama:
 
@@ -673,7 +673,7 @@ requiere invertir $B$, formar $A+\overline B$ con OR y combinar el resultado con
 El libro incorporará figuras propias con símbolos lógicos estándar. Cada ejemplo mostrará cuatro representaciones coordinadas: expresión, tabla de verdad, circuito y diagrama de temporización. No se reutilizarán las ilustraciones del texto de referencia.
 :::
 
-### Comprobación de una simplificación {.unnumbered}
+### Comprobación de una simplificación {.unnumbered .unlisted}
 
 Estudiemos
 
@@ -717,7 +717,7 @@ data.frame(
 all(F_original == F_simplificada)
 ~~~
 
-### Universalidad de NOR y NAND {.unnumbered}
+### Universalidad de NOR y NAND {.unnumbered .unlisted}
 
 ~~~{r}
 nor <- function(x, y) !(x | y)
@@ -756,7 +756,7 @@ data.frame(
 )
 ~~~
 
-### Señales activas en alto y en bajo {.unnumbered}
+### Señales activas en alto y en bajo {.unnumbered .unlisted}
 
 Una señal activa en alto realiza su función cuando vale $1$; una activa en bajo la realiza cuando vale $0$. En un nombre de señal, la barra superior puede indicar activación en bajo. En un símbolo lógico, una burbuja indica inversión o terminal activa en bajo.
 
@@ -775,7 +775,7 @@ data.frame(
 En R, cero y uno se modelan como estados lógicos. En el dispositivo real corresponden a intervalos de voltaje definidos por su tecnología. El modelo de este capítulo no incluye todavía márgenes de ruido ni retardos de propagación.
 :::
 
-### Formas de onda lógicas {.unnumbered}
+### Formas de onda lógicas {.unnumbered .unlisted}
 
 El siguiente ejemplo genera señales binarias y calcula las salidas AND y OR.
 
@@ -813,7 +813,7 @@ legend(
 El recurso previsto permitirá accionar interruptores para $A$, $B$ y $C$, observar la salida del circuito y comparar el resultado con la fila correspondiente de la tabla de verdad. Otro recurso permitirá mover los instantes de conmutación y observar las formas de onda. Las compuertas se presentarán con símbolos uniformes basados en la convención IEEE/ANSI estudiada por @tocci2003.
 :::
 
-## Laboratorio del capítulo {.unnumbered}
+## Laboratorio del capítulo {.unnumbered .unlisted}
 
 La primera versión integra tres aplicaciones que funcionan directamente en el sitio estático, sin servidor ni instalación adicional:
 
@@ -823,7 +823,7 @@ La primera versión integra tres aplicaciones que funcionan directamente en el s
 
 El **simulador de circuitos**, con compuertas, polaridades y diagramas de temporización, será la siguiente ampliación. Más adelante se preparará una versión Shiny o Shinylive cuando aporte controles que no convenga resolver en el navegador.
 
-## Ejercicios con R {.unnumbered}
+## Ejercicios con R {.unnumbered .unlisted}
 
 1. Modifique $U,A,B$ y compruebe ambas leyes de De Morgan.
 2. Construya la tabla de verdad de $[(p\land\neg q)\Rightarrow(r\land\neg r)]\Leftrightarrow(p\Rightarrow q)$.
@@ -834,7 +834,7 @@ El **simulador de circuitos**, con compuertas, polaridades y diagramas de tempor
 7. Implemente NAND y demuestre computacionalmente que también es una compuerta universal.
 8. Genere dos señales binarias propias y trace las salidas XOR y NOR.
 
-## Proyecto integrador {.unnumbered}
+## Proyecto integrador {.unnumbered .unlisted}
 
 Diseñe un sistema lógico de tres entradas relacionado con sensores electrónicos:
 
@@ -847,7 +847,7 @@ Diseñe un sistema lógico de tres entradas relacionado con sensores electrónic
 7. genere una forma de onda de prueba;
 8. interprete la reducción en el número de compuertas.
 
-## Recursos interactivos y multimedia {.unnumbered}
+## Recursos interactivos y multimedia {.unnumbered .unlisted}
 
 Esta versión ya incorpora:
 
@@ -868,10 +868,10 @@ En versiones posteriores se incorporarán:
 - infografía de errores frecuentes;
 - actividades de GeoGebra y simulador de circuitos.
 
-## Síntesis {.unnumbered}
+## Síntesis {.unnumbered .unlisted}
 
 R permite experimentar con conjuntos finitos, tablas de verdad, relaciones y funciones. Las comprobaciones exhaustivas son concluyentes cuando el dominio es finito y se han enumerado todos los casos. Para afirmaciones generales sobre conjuntos infinitos, la demostración matemática sigue siendo el fundamento.
 
-## Referencias del capítulo {.unnumbered}
+## Referencias del capítulo {.unnumbered .unlisted}
 
 La secuencia temática sigue el programa de Álgebra Superior [@uaslp2011]. Los fundamentos se apoyan en @silvaLazo2007, @epp2011 y @rosen2019. La aplicación a compuertas y álgebra booleana adapta el capítulo 3 de @tocci2003. El código utiliza R base [@rCore2026].
