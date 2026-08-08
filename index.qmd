@@ -14,6 +14,10 @@ La primera versión incluye interactivos autónomos para operaciones con conjunt
 
 El capítulo 2 añade laboratorios para inducción, algoritmo de Euclides y valor absoluto, además de un segundo cuaderno de R. Los índices temático, de símbolos, de funciones de R, de figuras y de laboratorios facilitan la consulta transversal.
 
+::: {.content-visible when-format="html"}
+<p class="pdf-download-hero"><a class="btn btn-primary" href="Algebra-Superior-R-GeoGebra-Capitulos-1-2.pdf" download>Descargar el libro en PDF</a></p>
+:::
+
 ## Ruta de aprendizaje {.unnumbered .unlisted}
 
 Cada sección sigue, cuando corresponde, esta secuencia:

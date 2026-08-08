@@ -5,12 +5,14 @@ project:
     - figures/**
     - interactivos/**
     - notebooks/**
+    - html/**
 
 book:
   title: "Álgebra Superior con aplicaciones en R y GeoGebra"
   subtitle: "Teoría, visualización y experimentación"
   author: "Jesús Gilberto Rodríguez Escobedo"
   date: "2026-08-07"
+  output-file: "Algebra-Superior-R-GeoGebra-Capitulos-1-2"
   chapters:
     - index.qmd
     - 01-logica-conjuntos.qmd
@@ -19,6 +21,11 @@ book:
     - references.qmd
   page-footer:
     center: "Licencia CC BY-NC-SA 4.0"
+  page-navigation: true
+  sidebar:
+    title: "Contenido del libro"
+    style: docked
+    collapse-level: 1
   downloads: [pdf]
   repo-url: https://github.com/gilbertorodriguez59/libro-algebra-superior-r-geogebra-dev
 
@@ -35,10 +42,12 @@ format:
       method: mathjax
       url: "https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml-full.js"
     toc: true
+    toc-title: "En este capítulo"
     code-copy: true
     code-fold: false
     anchor-sections: true
     search: true
+    include-after-body: html/sidebar.html
   pdf:
     documentclass: scrreprt
     toc: true

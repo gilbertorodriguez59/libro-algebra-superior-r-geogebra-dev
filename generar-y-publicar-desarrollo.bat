@@ -14,12 +14,40 @@ where quarto >nul 2>&1 || (
   goto :error_carpeta
 )
 
-if not exist ".nojekyll" type nul > ".nojekyll"
-echo Generando HTML, PDF, figuras e interactivos en docs...
-quarto render
+set "PDF_NOMBRE=Algebra-Superior-R-GeoGebra-Capitulos-1-2.pdf"
+set "PDF_TEMP=%TEMP%\%PDF_NOMBRE%"
+
+echo Generando el PDF...
+quarto render --to pdf
 if errorlevel 1 goto :error_render
+if not exist "docs\%PDF_NOMBRE%" (
+  echo ERROR: No se genero docs\%PDF_NOMBRE%.
+  goto :error_carpeta
+)
+copy /Y "docs\%PDF_NOMBRE%" "%PDF_TEMP%" >nul
+if errorlevel 1 goto :error_render
+
+echo Generando la web multipagina con menus laterales...
+quarto render --to html
+if errorlevel 1 goto :error_render
+copy /Y "%PDF_TEMP%" "docs\%PDF_NOMBRE%" >nul
+if errorlevel 1 goto :error_render
+if exist "%PDF_TEMP%" del /Q "%PDF_TEMP%" >nul 2>&1
+if not exist "docs\.nojekyll" type nul > "docs\.nojekyll"
 if not exist "docs\index.html" (
   echo ERROR: No se genero docs\index.html.
+  goto :error_carpeta
+)
+if not exist "docs\01-logica-conjuntos.html" (
+  echo ERROR: No se genero la pagina del capitulo 1.
+  goto :error_carpeta
+)
+if not exist "docs\02-enteros-reales.html" (
+  echo ERROR: No se genero la pagina del capitulo 2.
+  goto :error_carpeta
+)
+if not exist "docs\%PDF_NOMBRE%" (
+  echo ERROR: El PDF no quedo disponible para descarga.
   goto :error_carpeta
 )
 
@@ -50,7 +78,7 @@ if not errorlevel 1 (
   echo No hay cambios nuevos para subir.
   goto :fin
 )
-git commit -m "Amplia capitulo 1 con figuras, interactivos y Colab"
+git commit -m "Agrega navegacion lateral y descarga PDF"
 if errorlevel 1 goto :error_git
 git push origin main
 if errorlevel 1 goto :error_git
